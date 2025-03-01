@@ -1,0 +1,322 @@
+:root {
+    --pink: #FCE7F3;
+    --rose: #DFABCA;
+    --gold: #BA9666;
+}
+
+body {
+    background-color: var(--pink);
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+}
+
+
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+.bg-rose {
+    background-color: var(--rose);
+}
+
+/* Кнопка с анимацией границ и масштабированием при наведении */
+.animated-border-button {
+    position: relative;
+    overflow: hidden;
+    background-color: #F0C8E0;
+    color: var(--gold);
+    text-transform: uppercase;
+    padding: 0.5rem 2rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s ease;
+}
+
+/* При наведении кнопка увеличивается */
+.animated-border-button:hover {
+    transform: scale(1.05);
+}
+
+/* Границы кнопки */
+.animated-border-button .border {
+    position: absolute;
+    background-color: var(--gold);
+    transition: all 0.3s ease;
+}
+
+/* Верхняя граница */
+.animated-border-button .border.top {
+    top: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    transition-delay: 0.9s;
+}
+
+.animated-border-button:hover .border.top {
+    width: 100%;
+    transition-delay: 0s;
+}
+
+/* Левая граница */
+.animated-border-button .border.left {
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 0;
+    transition-delay: 0.6s;
+}
+
+.animated-border-button:hover .border.left {
+    height: 100%;
+    transition-delay: 0.3s;
+}
+
+/* Нижняя граница */
+.animated-border-button .border.bottom {
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    transition-delay: 0.3s;
+}
+
+.animated-border-button:hover .border.bottom {
+    width: 100%;
+    transition-delay: 0.6s;
+}
+
+/* Правая граница */
+.animated-border-button .border.right {
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 0;
+    transition-delay: 0s;
+}
+
+.animated-border-button:hover .border.right {
+    height: 100%;
+    transition-delay: 0.9s;
+}
+
+/* Стили для пунктов меню */
+.menu-link {
+    position: relative;
+    padding-bottom: 4px;
+    /* для места под underline */
+    transition: color 0.3s ease;
+}
+
+/* Псевдоэлемент для нижней линии */
+.menu-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background-color: var(--gold);
+    transition: width 0.3s ease;
+}
+
+/* При наведении underline появляется слева направо */
+.menu-link:hover::after {
+    width: 100%;
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Оверлей, который занимает только часть контейнера (например, нижнюю половину) */
+.background-overlay {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    /* Можно менять по необходимости */
+    background-color: #ba9666;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    /* "Вырастает" вверх */
+}
+
+/* Анимация для изображения, без указания размеров – только эффект анимации */
+.slide-image {
+    transform: scaleX(0);
+    transform-origin: left;
+    /* Анимация будет идти слева направо */
+}
+
+/* Ключевые кадры для анимации оверлея (раскрывается сверху вниз) */
+@keyframes reveal-bg {
+    to {
+        transform: scaleY(1);
+    }
+}
+
+/* Ключевые кадры для анимации изображения (проявляется слева направо) */
+@keyframes reveal-img {
+    to {
+        transform: scaleX(1);
+    }
+}
+
+/* При добавлении класса active запускаются анимации */
+.image-container.active .background-overlay {
+    animation: reveal-bg 1s forwards;
+}
+
+.image-container.active .slide-image {
+    animation: reveal-img 1s 2s forwards;
+    /* Задержка 2s, чтобы сначала отобразился оверлей */
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.animate-float {
+    animation: float 3s ease-in-out infinite;
+}
+
+.circle-container::before {
+    content: "";
+    background-image: url('/img/circle-back.png');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 800px;
+    height: 800px;
+    transform: translate(-50%, -50%);
+
+}
+
+.circle::before {
+    content: "";
+    background-image: url('/img/circle-back.png');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 800px;
+    height: 800px;
+    transform: translate(-50%, -50%);
+}
+
+.smcircle::before {
+    content: "";
+    background-image: url('/img/circle-back.png');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 50%;
+    bottom: -50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -220px;
+}
+
+.animate-block {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 2s ease-out, transform 2s ease-out;
+}
+
+.animate-block.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.animate-image,
+.animate-text {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 2s ease-out;
+}
+
+.animate-image.active,
+.animate-text.active {
+    opacity: 1;
+    transform: translateY(0);
+
+}
+
+.swiper {
+    width: 300px;
+    height: 600px;
+    perspective: 1000px;
+    /* Добавляет эффект глубины */
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    border-radius: 10px;
+    cursor: grab;
+}
+
+/* Центральный слайд */
+.swiper-slide-active {
+    z-index: 10;
+    opacity: 1;
+}
+
+/* Соседние слайды */
+.swiper-slide-prev,
+.swiper-slide-next {
+    transform: scale(0.8);
+    z-index: 5;
+    opacity: 0.7;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.scale {
+    display: inline-block;
+    overflow: hidden;
+
+}
+
+.scale img {
+    transition: 1s;
+    display: block;
+
+}
+
+.scale img:hover {
+    transform: scale(1.2);
+}
+
+@media (max-width: 640px) {
+    .footer-copy::after,.footer-copy::before, .circle-container:before, .circle::before, .smcircle::before {
+        display: none !important;
+    }
+
+}
