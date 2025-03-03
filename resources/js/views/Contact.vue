@@ -37,22 +37,22 @@
         </div>
         <!-- Правая часть: форма с нижней линией для полей -->
         <div class="lg:w-1/2 w-full">
-          <form class="space-y-4 p-6"
+          <form @submit.prevent="submitForm" class="space-y-4 p-6"
             style="background-color: #20193D5C; border: 2px solid #4D4181; border-radius: 0.5rem;">
             <div>
-              <input type="text" :placeholder="$t('form.name')"
+              <input type="text" v-model="name" :placeholder="$t('form.name')"
                 class="w-full p-2 bg-transparent text-[#C07CA5] border-b-2 border-[#C07CA5] focus:outline-none" />
             </div>
             <div>
-              <input type="email" :placeholder="$t('form.email')"
+              <input type="email" v-model="email" :placeholder="$t('form.email')"
                 class="w-full p-2 bg-transparent text-[#C07CA5] border-b-2 border-[#C07CA5] focus:outline-none" />
             </div>
             <div>
-              <input type="tel" :placeholder="$t('form.phone')"
+              <input type="tel" v-model="phone" :placeholder="$t('form.phone')"
                 class="w-full p-2 bg-transparent text-[#C07CA5] border-b-2 border-[#C07CA5] focus:outline-none" />
             </div>
             <div>
-              <textarea :placeholder="$t('form.message')"
+              <textarea v-model="message" :placeholder="$t('form.message')"
                 class="w-full p-2 bg-transparent text-[#C07CA5] border-b-2 border-[#C07CA5] focus:outline-none"></textarea>
             </div>
             <button type="submit" class="flex items-center justify-center bg-white text-[#C07CA5] px-4 py-2 rounded">
@@ -86,15 +86,20 @@
 </template>
 
 <script>
+import axios from 'axios';
 export default {
   name: 'Contact',
   data() {
     const titleArkach = this.$t('home.Arkach');
     const titleGulzemin = this.$t('home.Gulzemin');
     const titleBerkarar = this.$t('home.Berkarar');
-    const titleAshgabat = this.$t('home.Ashgabat');
+    const titleAshgabat = this.$t('home.Ashgabad');
 
     return {
+      name: '',
+      email: '',
+      phone: '',
+      message: '',
       locations: [
         {
           image: '/img/adres.png',
@@ -117,6 +122,28 @@ export default {
           description: this.$t('home.locationDescription'),
         },
       ]
+    }
+  },
+  methods: {
+    submitForm() {
+      axios.post('/contact/send', {
+        name: this.name,
+        email: this.email,
+        phone: this.phone,
+        message: this.message
+      })
+        .then(response => {
+          alert('Сообщение отправлено успешно!');
+          // можно очистить форму:
+          this.name = '';
+          this.email = '';
+          this.phone = '';
+          this.message = '';
+        })
+        .catch(error => {
+          alert('Ошибка при отправке сообщения');
+          console.error(error);
+        });
     }
   }
 }

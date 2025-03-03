@@ -70,7 +70,6 @@ export default {
       products: "Продукты",
       contacts: "Контакты",
       poweredBy: "Power by LTM",
-      designedBy: "Designed by KB"
     }
   },
   en: {
@@ -143,7 +142,6 @@ export default {
       products: "Products",
       contacts: "Contacts",
       poweredBy: "Powered by LTM",
-      designedBy: "Designed by KB"
     }
   },
   tm: {
@@ -216,7 +214,6 @@ export default {
       products: "Önümler",
       contacts: "Habarlaşmak",
       poweredBy: "LTM tarapyndan üpjün edilen",
-      designedBy: "KB tarapyndan dizaýn edilen"
     }
   }
 };

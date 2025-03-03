@@ -14,9 +14,8 @@
       </ul>
     </nav>
     <div class="border-t border-[#332864] mt-3 pt-3 relative flex items-center justify-center footer-copy h-[150px]">
-      <p class="text-sm px-4 flex gap-4 opacity-50 text-[14px]">
-        <a href="https://ltm.com" class="text-[#DFABCA] hover:underline">{{ $t("footer.poweredBy") }}</a>
-        <a href="https://kb.com" class="text-[#DFABCA] hover:underline">{{ $t("footer.designedBy") }}</a>
+      <p class="text-sm px-4 flex gap-4 opacity-50 text-[14px] z-999">
+        <a href="https://ltm.studio" class="text-[#DFABCA] hover:underline">{{ $t("footer.poweredBy") }}</a>
         <span class="text-[#DFABCA]">&copy; {{ new Date().getFullYear() }}</span>
       </p>
     </div>

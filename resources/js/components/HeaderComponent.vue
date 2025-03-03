@@ -11,7 +11,7 @@
       <div class="logo">
         <span class="text-[24px] text-[var(--gold)] font-bold uppercase tracking-[8px] p-4">EUROCOSMETICS</span>
       </div>
-      <nav class="menu flex-1 hidden md:flex">
+      <nav class="menu flex-1 hidden md:flex justify-center">
         <ul class="flex justify-center space-x-10 text-[var(--gold)]">
           <li>
             <router-link to="/" class="menu-link text-[16px] font-normal uppercase">{{ $t('menu.home') }}</router-link>

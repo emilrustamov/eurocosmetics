@@ -8,6 +8,7 @@ body {
     background-color: var(--pink);
     font-family: 'Montserrat', sans-serif;
     width: 100%;
+    cursor: url('/img/cursor.png') 16 16, auto;
 }
 
 
@@ -314,8 +315,29 @@ body {
     transform: scale(1.2);
 }
 
+::-webkit-scrollbar {
+    width: 8px;
+    /* Тонкий скроллбар */
+}
+
+::-webkit-scrollbar-track {
+    background: #f7e4ef;
+    /* Цвет трека */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #BA9666;
+    /* Цвет ползунка */
+    border-radius: 10px;
+}
+
 @media (max-width: 640px) {
-    .footer-copy::after,.footer-copy::before, .circle-container:before, .circle::before, .smcircle::before {
+
+    .footer-copy::after,
+    .footer-copy::before,
+    .circle-container:before,
+    .circle::before,
+    .smcircle::before {
         display: none !important;
     }
 

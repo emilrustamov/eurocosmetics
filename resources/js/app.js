@@ -10,17 +10,15 @@ import AnimatedButton from "./components/AnimatedButton.vue";
 import LocationCard from "./components/LocationCard.vue";
 import Swiper from "swiper/bundle";
 import { createI18n } from "vue-i18n";
-import messages from "./lang"; 
+import messages from "./lang";
 
 const i18n = createI18n({
-  locale: 'en', 
-  fallbackLocale: 'en',
-  messages,
+    locale: "en",
+    fallbackLocale: "en",
+    messages,
 });
 
 const app = createApp(App);
-
-
 
 app.component("animated-button", AnimatedButton);
 app.component("social-circles", SocialCircles);
@@ -47,7 +45,7 @@ function initAnimations() {
             disableOnInteraction: false,
         },
     });
-
+    window.initAnimations = initAnimations;
     // Анимация для контейнеров изображений
     const containers = document.querySelectorAll(".image-container");
     const observer = new IntersectionObserver(
@@ -71,8 +69,10 @@ function initAnimations() {
                 if (entry.isIntersecting) {
                     setTimeout(() => {
                         entry.target.classList.add("active");
-                        const images = entry.target.querySelectorAll(".animate-image");
-                        const texts = entry.target.querySelectorAll(".animate-text");
+                        const images =
+                            entry.target.querySelectorAll(".animate-image");
+                        const texts =
+                            entry.target.querySelectorAll(".animate-text");
                         images.forEach((image, imgIndex) => {
                             setTimeout(() => {
                                 image.classList.add("active");

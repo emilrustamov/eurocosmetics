@@ -5,7 +5,7 @@
         </div>
         <div class="text-center text-[var(--gold)] ">
             <h2 class="mb-2 text-[26px] tracking-[5px] uppercase py-5 animate-text">{{ title }}</h2>
-            <p class="lg:w-1/2 sm:w-3/4 mx-auto text-justify pb-5 animate-text">{{ description }}</p>
+            <p class="w-3/4 mx-auto text-justify pb-5 animate-text">{{ description }}</p>
         </div>
     </div>
 </template>
