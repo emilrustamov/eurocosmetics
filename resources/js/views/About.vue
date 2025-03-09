@@ -7,19 +7,19 @@
       <div class="absolute inset-0 bg-[rgba(0,0,0,0.5)]"></div>
       <div class="absolute inset-0 flex flex-col items-center justify-center">
         <h1 class="text-white lg:text-[80px] text-4xl font-light uppercase tracking-[2px] animate-text"
-          style="font-family: 'Mont', sans-serif;">
+          style="font-family: 'Mont'">
           Eurocosmetics
         </h1>
         <div class="flex items-center">
           <img :src="'/img/flowers.jpg'" alt="Flowers" class="mr-2 rounded md:w-24 md:h-16 ">
           <h1 class="text-white lg:text-[80px] text-4xl font-light uppercase tracking-[2px] animate-text"
-            style="font-family: 'Mont', sans-serif;">
-            of your
+            style="font-family: 'Mont'">
+            {{ $t("hero.of_your") }}
           </h1>
         </div>
         <h1 class="text-white lg:text-[80px] text-4xl font-light uppercase tracking-[2px] animate-text"
-          style="font-family: 'Mont', sans-serif;">
-          beauty & style
+          style="font-family: 'Mont'">
+          {{ $t("hero.beauty_and_style") }}
         </h1>
       </div>
       <div class="absolute bottom-0 w-full h-16 bg-gradient-to-t from-[#FCE7F3] to-transparent"></div>
@@ -118,6 +118,19 @@ export default {
       }
       updateCount();
     });
+    window.addEventListener('scroll', this.handleScroll);
+  },
+  beforeDestroy() { // or beforeUnmount in Vue 3
+    window.removeEventListener('scroll', this.handleScroll);
+  },
+  methods: {
+    handleScroll() {
+      if (window.innerWidth < 768) return; // disable scroll-based transformation on mobile devices
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      document.querySelectorAll('.animate-block').forEach(el => {
+        el.style.transform = `translateY(${scrollTop * 0.03}px)`;
+      });
+    }
   }
 }
 </script>

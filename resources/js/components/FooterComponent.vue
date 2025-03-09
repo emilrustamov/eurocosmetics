@@ -6,11 +6,35 @@
         Eurocosmetics</h2>
     </div>
     <nav class="mb-3">
-      <ul class="flex justify-center gap-6 text-[20px] py-10">
-        <li><a href="#home" class="text-[#DFABCA] hover:underline">{{ $t("footer.home") }}</a></li>
-        <li><a href="#about" class="text-[#DFABCA] hover:underline">{{ $t("footer.about") }}</a></li>
-        <li><a href="#products" class="text-[#DFABCA] hover:underline">{{ $t("footer.products") }}</a></li>
-        <li><a href="#contact" class="text-[#DFABCA] hover:underline">{{ $t("footer.contacts") }}</a></li>
+
+      <ul class="flex justify-center gap-6 text-[20px] py-10 md:hidden">
+        <li>
+          <a href="#home" class="text-[#DFABCA] hover:underline">
+            <i class="fa fa-home"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#about" class="text-[#DFABCA] hover:underline">
+            <i class="fa fa-info-circle"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#products" class="text-[#DFABCA] hover:underline">
+            <i class="fa fa-boxes"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#contact" class="text-[#DFABCA] hover:underline">
+            <i class="fa fa-phone-alt"></i>
+          </a>
+        </li>
+      </ul>
+
+      <ul class="hidden md:flex justify-center gap-6 text-[20px] py-10">
+        <li><a href="/" class="text-[#DFABCA] hover:underline">{{ $t("footer.home") }}</a></li>
+        <li><a href="/about" class="text-[#DFABCA] hover:underline">{{ $t("footer.about") }}</a></li>
+        <li><a href="https://eurocosmetics.com.tm/" class="text-[#DFABCA] hover:underline">{{ $t("footer.products") }}</a></li>
+        <li><a href="/contact" class="text-[#DFABCA] hover:underline">{{ $t("footer.contacts") }}</a></li>
       </ul>
     </nav>
     <div class="border-t border-[#332864] mt-3 pt-3 relative flex items-center justify-center footer-copy h-[150px]">

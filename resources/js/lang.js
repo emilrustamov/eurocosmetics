@@ -61,8 +61,11 @@ export default {
       Arkach: "ТЦ Аркач",
       Berkarar: "ТЦ Беркарар",
       Gulzemin: "ТЦ Гулземин",
-      Ashgabad: "Ашгабад молл" 
-
+      Ashgabad: "Ашгабад молл",
+      ArkachAddress: "1эт. напротив Кямил маркета",
+      GulzeminAddress: "1эт. Чопан Маркет",
+      BerkararAddress: "1эт. (вход со стороны парковки)",
+      AshgabadAddress: "1эт. B1-21"
     },
     footer: {
       home: "Главная",
@@ -70,6 +73,10 @@ export default {
       products: "Продукты",
       contacts: "Контакты",
       poweredBy: "Power by LTM",
+    },
+    hero: {
+      of_your: "вашей",
+      beauty_and_style: "красота и стиль"
     }
   },
   en: {
@@ -134,7 +141,11 @@ export default {
       Arkach: "Arkach",
       Berkarar: "Berkarar",
       Gulzemin: "Gulzemin",
-      Ashgabad: "Ashgabad mall" 
+      Ashgabad: "Ashgabad mall",
+      ArkachAddress: "1st floor, opposite Kymil Market",
+      GulzeminAddress: "1st floor, Chopan Market",
+      BerkararAddress: "1st floor (entrance from parking)",
+      AshgabadAddress: "1st floor, B1-21"
     },
     footer: {
       home: "Home",
@@ -142,6 +153,10 @@ export default {
       products: "Products",
       contacts: "Contacts",
       poweredBy: "Powered by LTM",
+    },
+    hero: {
+      of_your: "of your",
+      beauty_and_style: "beauty & style"
     }
   },
   tm: {
@@ -206,7 +221,11 @@ export default {
       Arkach: "Arkach",
       Berkarar: "Berkarar",
       Gulzemin: "Gulzemin",
-      Ashgabad: "Ashgabad mall" 
+      Ashgabad: "Ashgabad mall",
+      ArkachAddress: "1 gat garşy Kямil market",
+      GulzeminAddress: "1 gat. Çopan Market",
+      BerkararAddress: "1 gat (gahanda garaž tarapyndan giriş)",
+      AshgabadAddress: "1 gat B1-21"
     },
     footer: {
       home: "Baş sahypa",
@@ -214,6 +233,10 @@ export default {
       products: "Önümler",
       contacts: "Habarlaşmak",
       poweredBy: "LTM tarapyndan üpjün edilen",
+    },
+    hero: {
+      of_your: "siziň",
+      beauty_and_style: "gözellik we stil"
     }
   }
 };

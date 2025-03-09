@@ -27,5 +27,9 @@ export default {
 <style scoped>
 .animated-border-button {
     font-size: 16px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-flex;
+    align-items: center;
 }
 </style>

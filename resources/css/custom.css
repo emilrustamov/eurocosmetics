@@ -1,3 +1,17 @@
+@font-face {
+    font-family: 'Mont';
+    src: url('/fonts/mont.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mons';
+    src: url('/fonts/mons.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 :root {
     --pink: #FCE7F3;
     --rose: #DFABCA;
@@ -11,19 +25,16 @@ body {
     cursor: url('/img/cursor.png') 16 16, auto;
 }
 
-
 .container {
     max-width: 1600px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-
 .bg-rose {
     background-color: var(--rose);
 }
 
-/* Кнопка с анимацией границ и масштабированием при наведении */
 .animated-border-button {
     position: relative;
     overflow: hidden;
@@ -36,19 +47,21 @@ body {
     transition: background-color 0.3s, color 0.3s, transform 0.3s ease;
 }
 
-/* При наведении кнопка увеличивается */
 .animated-border-button:hover {
     transform: scale(1.05);
 }
 
-/* Границы кнопки */
 .animated-border-button .border {
     position: absolute;
     background-color: var(--gold);
     transition: all 0.3s ease;
+    opacity: 0;
 }
 
-/* Верхняя граница */
+.animated-border-button:hover .border {
+    opacity: 1;
+}
+
 .animated-border-button .border.top {
     top: 0;
     left: 0;
@@ -62,7 +75,6 @@ body {
     transition-delay: 0s;
 }
 
-/* Левая граница */
 .animated-border-button .border.left {
     top: 0;
     left: 0;
@@ -76,7 +88,6 @@ body {
     transition-delay: 0.3s;
 }
 
-/* Нижняя граница */
 .animated-border-button .border.bottom {
     bottom: 0;
     left: 0;
@@ -90,7 +101,6 @@ body {
     transition-delay: 0.6s;
 }
 
-/* Правая граница */
 .animated-border-button .border.right {
     top: 0;
     right: 0;
@@ -104,15 +114,12 @@ body {
     transition-delay: 0.9s;
 }
 
-/* Стили для пунктов меню */
 .menu-link {
     position: relative;
     padding-bottom: 4px;
-    /* для места под underline */
     transition: color 0.3s ease;
 }
 
-/* Псевдоэлемент для нижней линии */
 .menu-link::after {
     content: "";
     position: absolute;
@@ -124,7 +131,6 @@ body {
     transition: width 0.3s ease;
 }
 
-/* При наведении underline появляется слева направо */
 .menu-link:hover::after {
     width: 100%;
 }
@@ -134,49 +140,40 @@ body {
     overflow: hidden;
 }
 
-/* Оверлей, который занимает только часть контейнера (например, нижнюю половину) */
 .background-overlay {
     position: absolute;
     bottom: 0;
     right: 0;
     width: 100%;
     height: 100%;
-    /* Можно менять по необходимости */
     background-color: #ba9666;
     transform: scaleY(0);
     transform-origin: bottom;
-    /* "Вырастает" вверх */
 }
 
-/* Анимация для изображения, без указания размеров – только эффект анимации */
 .slide-image {
     transform: scaleX(0);
     transform-origin: left;
-    /* Анимация будет идти слева направо */
 }
 
-/* Ключевые кадры для анимации оверлея (раскрывается сверху вниз) */
 @keyframes reveal-bg {
     to {
         transform: scaleY(1);
     }
 }
 
-/* Ключевые кадры для анимации изображения (проявляется слева направо) */
 @keyframes reveal-img {
     to {
         transform: scaleX(1);
     }
 }
 
-/* При добавлении класса active запускаются анимации */
 .image-container.active .background-overlay {
     animation: reveal-bg 1s forwards;
 }
 
 .image-container.active .slide-image {
     animation: reveal-img 1s 2s forwards;
-    /* Задержка 2s, чтобы сначала отобразился оверлей */
 }
 
 @keyframes float {
@@ -206,7 +203,6 @@ body {
     width: 800px;
     height: 800px;
     transform: translate(-50%, -50%);
-
 }
 
 .circle::before {
@@ -257,14 +253,12 @@ body {
 .animate-text.active {
     opacity: 1;
     transform: translateY(0);
-
 }
 
 .swiper {
     width: 300px;
     height: 600px;
     perspective: 1000px;
-    /* Добавляет эффект глубины */
 }
 
 .swiper-slide {
@@ -279,13 +273,11 @@ body {
     cursor: grab;
 }
 
-/* Центральный слайд */
 .swiper-slide-active {
     z-index: 10;
     opacity: 1;
 }
 
-/* Соседние слайды */
 .swiper-slide-prev,
 .swiper-slide-next {
     transform: scale(0.8);
@@ -302,13 +294,11 @@ body {
 .scale {
     display: inline-block;
     overflow: hidden;
-
 }
 
 .scale img {
     transition: 1s;
     display: block;
-
 }
 
 .scale img:hover {
@@ -317,17 +307,14 @@ body {
 
 ::-webkit-scrollbar {
     width: 8px;
-    /* Тонкий скроллбар */
 }
 
 ::-webkit-scrollbar-track {
     background: #f7e4ef;
-    /* Цвет трека */
 }
 
 ::-webkit-scrollbar-thumb {
     background-color: #BA9666;
-    /* Цвет ползунка */
     border-radius: 10px;
 }
 
@@ -340,5 +327,4 @@ body {
     .smcircle::before {
         display: none !important;
     }
-
 }

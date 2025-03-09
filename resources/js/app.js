@@ -7,7 +7,7 @@ import SocialCircles from "./components/SocialCircles.vue";
 import FooterComponent from "./components/FooterComponent.vue";
 import ProductCard from "./components/ProductCard.vue";
 import AnimatedButton from "./components/AnimatedButton.vue";
-import LocationCard from "./components/LocationCard.vue";
+import Location from "./components/Location.vue"; // added new Location component
 import Swiper from "swiper/bundle";
 import { createI18n } from "vue-i18n";
 import messages from "./lang";
@@ -25,7 +25,7 @@ app.component("social-circles", SocialCircles);
 app.component("header-component", HeaderComponent);
 app.component("footer-component", FooterComponent);
 app.component("product-card", ProductCard);
-app.component("location-card", LocationCard);
+app.component("location", Location); // register new Location component
 
 app.use(router);
 app.use(i18n);

@@ -1,4 +1,7 @@
 <template>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap" rel="stylesheet">
   <div>
     <div v-if="loading" class="loader-overlay">
       <div class="loader"></div>
@@ -13,8 +16,8 @@
             Eurocosmetics
           </span>
           <h1
-            class="text-white text-[80px] font-light uppercase transform rotate-[-2.53deg] tracking-[2px] animate-text"
-            style="line-height: 105.6px; font-family: 'Mont', sans-serif;">
+            class="text-white text-center text-[40px] sm:text-[80px] font-light uppercase transform rotate-[-2.53deg] tracking-[2px] animate-text leading-normal sm:leading-[105.6px]"
+            style="font-family: 'Mont'">
             {{ $t("home.createBeauty") }} <br> {{ $t("home.together") }}
           </h1>
         </div>
@@ -32,9 +35,9 @@
         </div>
       </section>
 
-      <section class="pb-50 bg-[var(--pink)] -mt-30">
+      <section class="pb-20 md:pb-50  bg-[var(--pink)] -mt-30">
         <div class="container mx-auto px-5">
-          <div class="flex flex-col md:flex-row justify-around items-start gap-5">
+          <div class="flex flex-col md:flex-row justify-around items-center gap-5">
             <div class="text-center flex-1 animate-block">
               <div class="mx-auto mb-2 w-28 h-28 animate-image">
                 <img :src="'/img/border1.png'" alt="1" class="mx-auto block">
@@ -67,7 +70,7 @@
       </section>
 
       <!-- Секция с изображениями и текстом "О нас" -->
-      <section class="pb-50 bg-[var(--pink)]">
+      <section class="pb-20 md:pb-50 bg-[var(--pink)]">
         <div class="container mx-auto px-5 space-y-10 circle relative">
           <div class="flex flex-col md:flex-row items-center justify-evenly gap-5 image-container">
             <div class="relative">
@@ -84,7 +87,7 @@
               <h2 class="mb-2 lg:text-[40px] md:text-3xl tracking-[5px] uppercase py-5 animate-text">
                 {{ $t("about.title") }}
               </h2>
-              <p class="w-1/2 sm:w-3/4 mx-auto text-justify pb-5 animate-text">
+              <p class="sm:w-1/2 w-full mx-auto text-justify pb-5 animate-text">
                 {{ $t("home.aboutUsDescription") }}
               </p>
               <animated-button :link="'/about'" :label="$t('home.moreInfo')"></animated-button>
@@ -106,7 +109,7 @@
               <h2 class="mb-2 lg:text-[40px] md:text-3xl tracking-[5px] uppercase py-5 animate-text">
                 {{ $t("home.cooperation") }}
               </h2>
-              <p class="w-1/2 sm:w-3/4 mx-auto text-justify pb-5 animate-text">
+              <p class="sm:w-1/2 w-full mx-auto text-justify pb-5 animate-text">
                 {{ $t("home.cooperationDescription") }}
               </p>
               <animated-button :link="'/about'" :label="$t('home.moreInfo')"></animated-button>
@@ -122,19 +125,20 @@
             {{ $t("home.products") }}
           </h2>
           <div class="grid grid-cols-1 md:grid-cols-3 gap-2">
-            <div v-for="(product, index) in products" :key="index" class="relative overflow-hidden animate-block">
+            <div v-for="(product, index) in products" :key="index"
+              class="relative overflow-hidden animate-block no-scroll">
               <div class="relative h-full">
-                <img :src="product.image" :alt="product.title" class="w-full h-full object-cover animate-image">
+                <img :src="product.image" :alt="$t(product.titleKey)" class="w-full h-full object-cover animate-image">
                 <div
                   class="absolute inset-0 bg-gradient-to-b from-[rgba(10,3,24,0.2)] via-[rgba(17,12,35,0.8)] to-[#15112A] z-10">
                 </div>
               </div>
               <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white z-20">
                 <h2 class="mb-2 lg:text-[40px] md:text-3xl tracking-[5px] uppercase py-5 animate-text">
-                  {{ product.title }}
+                  {{ $t(product.titleKey) }}
                 </h2>
-                <p class="w-1/2 sm:w-3/4 mx-auto text-center pb-5 animate-text hidden md:block">
-                  {{ product.description }}
+                <p class="sm:w-1/2 w-full mx-auto text-center pb-5 animate-text hidden md:block">
+                  {{ $t(product.descriptionKey) }}
                 </p>
                 <animated-button :link="'https://eurocosmetics.com.tm/'" :label="$t('home.moreInfo')"></animated-button>
               </div>
@@ -147,7 +151,7 @@
       <section class="py-30 bg-[#1E1927]">
         <div class="swiper">
           <div class="swiper-wrapper">
-            <div v-for="n in 17" :key="n" class="swiper-slide flex items-center justify-center">
+            <div v-for="n in 23" :key="n" class="swiper-slide flex items-center justify-center">
               <div class="w-40 h-40 flex items-center justify-center">
                 <img :src="`/img/logo/logo${n}.png`" :alt="`Logo ${n}`"
                   class="w-full h-full object-contain object-center">
@@ -157,25 +161,9 @@
         </div>
       </section>
 
-      <!-- Секция локаций -->
-      <section class="py-50 bg-[#F8ECF3]">
-        <div class="container mx-auto flex flex-col lg:flex-row gap-8 pb-50">
-          <div class="lg:w-1/2 md:w-full">
-            <div class="sticky top-10">
-              <img :src="'/img/store.jpg'" alt="Store Image"
-                class="w-2/3 h-auto max-h-[550px] object-contain rounded-full md:mx-auto md:pb-10">
-            </div>
-          </div>
-          <div class="lg:w-1/2 w-full flex flex-col gap-6 items-center">
-            <div class="lg:w-1/2 w-full flex flex-col gap-6">
-              <location-card v-for="(location, index) in locations" :key="index" :image="location.image"
-                :title="location.title" :description="location.description"></location-card>
-            </div>
-          </div>
-        </div>
-      </section>
-
+      <location> </location>
       <social-circles></social-circles>
+
     </div>
   </div>
 </template>
@@ -184,65 +172,38 @@
 export default {
   name: 'Home',
   data() {
-    const titleArkach = this.$t('home.Arkach');
-    const titleGulzemin = this.$t('home.Gulzemin');
-    const titleBerkarar = this.$t('home.Berkarar');
-    const titleAshgabat = this.$t('home.Ashgabad');
-
     return {
       loading: true,
       products: [
         {
           image: '/img/cat/cat1.jpg',
-          title: this.$t('home.careCosmetics'),
-          description: this.$t('home.careCosmeticsDescription'),
+          titleKey: 'home.careCosmetics',
+          descriptionKey: 'home.careCosmeticsDescription',
         },
         {
           image: '/img/cat/cat2.jpg',
-          title: this.$t('home.perfumes'),
-          description: this.$t('home.perfumesDescription'),
+          titleKey: 'home.perfumes',
+          descriptionKey: 'home.perfumesDescription',
         },
         {
           image: '/img/cat/cat3.jpg',
-          title: this.$t('home.decorativeCosmetics'),
-          description: this.$t('home.decorativeCosmeticsDescription'),
+          titleKey: 'home.decorativeCosmetics',
+          descriptionKey: 'home.decorativeCosmeticsDescription',
         },
         {
           image: '/img/cat/cat4.jpg',
-          title: this.$t('home.forChildren'),
-          description: this.$t('home.forChildrenDescription'),
+          titleKey: 'home.forChildren',
+          descriptionKey: 'home.forChildrenDescription',
         },
         {
           image: '/img/cat/cat5.jpg',
-          title: this.$t('home.forMen'),
-          description: this.$t('home.forMenDescription'),
+          titleKey: 'home.forMen',
+          descriptionKey: 'home.forMenDescription',
         },
         {
           image: '/img/cat/cat6.jpg',
-          title: this.$t('home.hairCare'),
-          description: this.$t('home.hairCareDescription'),
-        },
-      ],
-      locations: [
-        {
-          image: '/img/adres.png',
-          title: titleArkach,
-          description: this.$t('home.locationDescription'),
-        },
-        {
-          image: '/img/adres.png',
-          title: titleGulzemin,
-          description: this.$t('home.locationDescription'),
-        },
-        {
-          image: '/img/adres.png',
-          title: titleBerkarar,
-          description: this.$t('home.locationDescription'),
-        },
-        {
-          image: '/img/adres.png',
-          title: titleAshgabat,
-          description: this.$t('home.locationDescription'),
+          titleKey: 'home.hairCare',
+          descriptionKey: 'home.hairCareDescription',
         },
       ]
     }
@@ -250,21 +211,33 @@ export default {
   mounted() {
     console.log("Component mounted");
     this.hideLoader();
+    window.addEventListener('scroll', this.handleScroll);
+  },
+  beforeDestroy() { // or beforeUnmount in Vue3
+    window.removeEventListener('scroll', this.handleScroll);
   },
   methods: {
-  hideLoader() {
-    console.log("Preloader active, waiting 10 sec before hiding...");
-    setTimeout(() => {
-      this.loading = false;
-      this.$nextTick(() => {
-        console.log("Loader hidden after 10 seconds");
-        if (typeof initAnimations === "function") {
-          initAnimations();
-        }
+    hideLoader() {
+      console.log("Preloader active, waiting 10 sec before hiding...");
+      setTimeout(() => {
+        this.loading = false;
+        this.$nextTick(() => {
+          console.log("Loader hidden after 10 seconds");
+          if (typeof initAnimations === "function") {
+            initAnimations();
+          }
+        });
+      }, 3000);
+    },
+    handleScroll() {
+      if (window.innerWidth < 768) return; // disable scroll-based transformation on mobile devices
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      // Only affect elements without the "no-scroll" class
+      document.querySelectorAll('.animate-block:not(.no-scroll)').forEach(el => {
+        el.style.transform = `translateY(${scrollTop * 0.03}px)`;
       });
-    }, 3000);
+    }
   }
-}
 }
 </script>
 
@@ -275,7 +248,8 @@ export default {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #fce7f3; /* розовый фон */
+  background: #fce7f3;
+  /* розовый фон */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -292,6 +266,7 @@ export default {
   background: radial-gradient(circle closest-side, #BA9666 94%, #0000) right/calc(200% - 1em) 100%;
   animation: l24 1s infinite alternate linear;
 }
+
 .loader::before {
   content: "Loading...";
   line-height: 1em;
@@ -299,10 +274,13 @@ export default {
   background: inherit;
   background-image: radial-gradient(circle closest-side, #fff 94%, #BA9666);
   -webkit-background-clip: text;
-          background-clip: text;
+  background-clip: text;
+  font-family: 'Mons', sans-serif;
 }
 
-@keyframes l24{
-  100%{background-position: left}
+@keyframes l24 {
+  100% {
+    background-position: left
+  }
 }
 </style>
