@@ -1,7 +1,8 @@
 <template>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap" rel="stylesheet"> -->
+
   <div>
     <div v-if="loading" class="loader-overlay">
       <div class="loader"></div>
@@ -35,7 +36,7 @@
         </div>
       </section>
 
-      <section class="pb-20 md:pb-50  bg-[var(--pink)] -mt-30">
+      <section class="pb-20 md:pb-50 -mt-30">
         <div class="container mx-auto px-5">
           <div class="flex flex-col md:flex-row justify-around items-center gap-5">
             <div class="text-center flex-1 animate-block">
@@ -70,7 +71,7 @@
       </section>
 
       <!-- Секция с изображениями и текстом "О нас" -->
-      <section class="pb-20 md:pb-50 bg-[var(--pink)]">
+      <section class="pb-20 md:pb-50 ">
         <div class="container mx-auto px-5 space-y-10 circle relative">
           <div class="flex flex-col md:flex-row items-center justify-evenly gap-5 image-container">
             <div class="relative">
@@ -87,7 +88,7 @@
               <h2 class="mb-2 lg:text-[40px] md:text-3xl tracking-[5px] uppercase py-5 animate-text">
                 {{ $t("about.title") }}
               </h2>
-              <p class="sm:w-1/2 w-full mx-auto text-justify pb-5 animate-text">
+              <p class="sm:w-1/2 w-full mx-auto text-justify pb-5 animate-text whitespace-pre-line">
                 {{ $t("home.aboutUsDescription") }}
               </p>
               <animated-button :link="'/about'" :label="$t('home.moreInfo')"></animated-button>
@@ -148,13 +149,33 @@
       </section>
 
       <!-- Секция логотипов -->
-      <section class="py-30 bg-[#1E1927]">
-        <div class="swiper">
-          <div class="swiper-wrapper">
-            <div v-for="n in 23" :key="n" class="swiper-slide flex items-center justify-center">
-              <div class="w-40 h-40 flex items-center justify-center">
-                <img :src="`/img/logo/logo${n}.png`" :alt="`Logo ${n}`"
-                  class="w-full h-full object-contain object-center">
+      <section class="py-30 bg-white">
+        <h2 class="text-center text-3xl font-bold mb-6">Наши бренда</h2>
+        <!-- Десктоп: табличка в 2 строки -->
+        <div class="hidden md:block">
+          <div class="grid grid-cols-12 gap-4">
+            <div v-for="n in logoRow1" :key="`row1-${n}`" class="flex items-center justify-center">
+              <img :src="`/img/logo/logo${n}.png`" :alt="`Logo ${n}`"
+                class="w-full h-full object-contain object-center">
+            </div>
+          </div>
+          <div class="grid grid-cols-12 gap-4 mt-4">
+            <div v-for="n in logoRow2" :key="`row2-${n}`" class="flex items-center justify-center">
+              <img :src="`/img/logo/logo${n}.png`" :alt="`Logo ${n}`"
+                class="w-full h-full object-contain object-center">
+            </div>
+          </div>
+        </div>
+
+        <!-- Мобильная версия: горизонтальный слайдер -->
+        <div class="block md:hidden">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div v-for="n in 23" :key="n" class="swiper-slide flex items-center justify-center">
+                <div class="w-40 h-40 flex items-center justify-center">
+                  <img :src="`/img/logo/logo${n}.png`" :alt="`Logo ${n}`"
+                    class="w-full h-full object-contain object-center">
+                </div>
               </div>
             </div>
           </div>
@@ -208,12 +229,24 @@ export default {
       ]
     }
   },
+  computed: {
+    // Разбиваем 23 логотипа на два ряда
+    logoRow1() {
+      const countRow1 = Math.ceil(23 / 2);
+      return Array.from({ length: countRow1 }, (_, i) => i + 1);
+    },
+    logoRow2() {
+      const countRow1 = Math.ceil(23 / 2);
+      const countRow2 = 23 - countRow1;
+      return Array.from({ length: countRow2 }, (_, i) => i + countRow1 + 1);
+    }
+  },
   mounted() {
     console.log("Component mounted");
     this.hideLoader();
     window.addEventListener('scroll', this.handleScroll);
   },
-  beforeDestroy() { // or beforeUnmount in Vue3
+  beforeDestroy() { // или beforeUnmount в Vue3
     window.removeEventListener('scroll', this.handleScroll);
   },
   methods: {
@@ -230,9 +263,9 @@ export default {
       }, 3000);
     },
     handleScroll() {
-      if (window.innerWidth < 768) return; // disable scroll-based transformation on mobile devices
+      if (window.innerWidth < 768) return; // отключаем скролл-эффекты на мобильных устройствах
       const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      // Only affect elements without the "no-scroll" class
+      // затрагиваем только элементы без класса "no-scroll"
       document.querySelectorAll('.animate-block:not(.no-scroll)').forEach(el => {
         el.style.transform = `translateY(${scrollTop * 0.03}px)`;
       });
@@ -280,7 +313,7 @@ export default {
 
 @keyframes l24 {
   100% {
-    background-position: left
+    background-position: left;
   }
 }
-</style>
+</style>ы

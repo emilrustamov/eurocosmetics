@@ -1,242 +1,265 @@
 export default {
-  ru: {
-    header: {
-      contacts: "Контакты"
+    ru: {
+        header: {
+            contacts: "Контакты",
+        },
+        form: {
+            contactForm: "Контактная форма",
+            focusOnPartners: "ФОКУС НА ПАРТНЁРАХ",
+            description:
+                "Мы – официальный дистрибьютор косметики, предлагающий качественные продукты и выгодные условия сотрудничества. Присоединяйтесь к нам!",
+            name: "Имя",
+            email: "Email",
+            phone: "Телефон",
+            message: "Сообщение",
+            send: "Отправить",
+        },
+        menu: {
+            home: "Главная",
+            products: "Продукция",
+            about: "О компании",
+            contacts: "Контакты",
+        },
+        about: {
+            title: "О нас",
+            products: "Товаров",
+            clients: "Клиентов",
+            stores: "Магазинов",
+            ourHistory: "Наша история",
+            description:
+                "Eurocosmetics – официальные дистрибьюторы лучших европейских косметических брендов в Туркменистане. У нас представлен широкий ассортимент продуктов космоцевтики – результат сотрудничества фармацевтов и косметических компаний Европы – для поддержания и преумножения Вашей уникальной красоты: средства по уходу за кожей, волосами, косметика и т.д. Eurocosmetics.tm открывает путь к красоте и достойному уходу за кожей. Вы заслуживаете пользоваться самым лучшим.",
+            revolution: "Революция красоты без компромиссов!",
+        },
+        social: {
+            followUs: "Следите за нами:",
+        },
+        home: {
+            createBeauty: "Красота спасет",
+            together: "мир",
+            officialDistributors: "Официальные дистрибьюторы",
+            bestEuropeanBrands: "лучших европейских брендов",
+            wideRange: "Широкий ассортимент",
+            cosmeceuticalProducts: "космоцевтических продуктов",
+            reputation: "Репутация",
+            reliability: "Надёжность",
+            aboutUsDescription:
+                "Eurocosmetics.tm - ваш официальный гид в мире премиальной европейской косметики и нишевой парфюмерии в Туркменистане. Мы с гордостью представляем продукцию всемирно известных брендов, таких как Vichy, La Roche-Posay, Cerave, Forrled, Catalysis, а также эксклюзивных парфюмерных домов: Memo Paris, Byredo, Vilhelm Parfumerie, The House of Oud и других.\n\n Наша тщательно подобранная коллекция включает в себя космецевтику - уникальное сочетание фармацевтических разработок и косметических инноваций Европы и Японии, а также редкие ароматы, созданные для истинных ценителей парфюмерного искусства. Мы стремимся подчеркнуть и сохранить вашу индивидуальность, предлагая высококачественные средства по уходу за кожей, волосами, декоративную косметику и изысканные ароматы",
+            moreInfo: "Подробнее",
+            cooperation: "Сотрудничество",
+            cooperationDescription:
+                "Мы предлагаем выгодные условия сотрудничества для наших партнёров. Присоединяйтесь к нам и развивайте свой бизнес вместе с Eurocosmetics.",
+            products: "Продукция",
+            careCosmetics: "Уходовая косметика",
+            careCosmeticsDescription:
+                "Высококачественные средства для ухода за кожей и волосами.",
+            perfumes: "Парфюмерия",
+            perfumesDescription: "Ароматы от лучших европейских брендов.",
+            decorativeCosmetics: "Декоративная косметика",
+            decorativeCosmeticsDescription:
+                "Широкий ассортимент декоративной косметики.",
+            forChildren: "Для детей",
+            forChildrenDescription:
+                "Безопасные и качественные продукты для детей.",
+            forMen: "Для мужчин",
+            forMenDescription: "Косметика и парфюмерия для мужчин.",
+            hairCare: "Уход за волосами",
+            hairCareDescription: "Средства для ухода за волосами.",
+            locationDescription:
+                "Наши магазины расположены в удобных местах города.",
+            Arkach: "ТЦ Аркач",
+            Berkarar: "ТЦ Беркарар",
+            Gulzemin: "ТЦ Гулземин",
+            Ashgabad: "Ашгабад молл",
+            ArkachAddress: "1эт. напротив Кямил маркета",
+            GulzeminAddress: "1эт. Чопан Маркет",
+            BerkararAddress: "1эт. (вход со стороны парковки)",
+            AshgabadAddress: "1эт. B1-21",
+        },
+        footer: {
+            home: "Главная",
+            about: "О нас",
+            products: "Продукты",
+            contacts: "Контакты",
+            poweredBy: "Power by LTM",
+        },
+        hero: {
+            of_your: "вашей",
+            beauty_and_style: "красота и стиль",
+        },
     },
-    form: {
-      contactForm: "Контактная форма",
-      focusOnPartners: "ФОКУС НА ПАРТНЁРАХ",
-      description: "Мы – официальный дистрибьютор косметики, предлагающий качественные продукты и выгодные условия сотрудничества. Присоединяйтесь к нам!",
-      name: "Имя",
-      email: "Email",
-      phone: "Телефон",
-      message: "Сообщение",
-      send: "Отправить"
+    en: {
+        header: {
+            contacts: "Contacts",
+        },
+        form: {
+            contactForm: "Contact Form",
+            focusOnPartners: "FOCUS ON PARTNERS",
+            description:
+                "We are the official distributor of cosmetics, offering high quality products and competitive cooperation conditions. Join us!",
+            name: "Name",
+            email: "Email",
+            phone: "Phone",
+            message: "Message",
+            send: "Send",
+        },
+        menu: {
+            home: "Home",
+            products: "Products",
+            about: "About",
+            contacts: "Contacts",
+        },
+        about: {
+            title: "About Us",
+            products: "Products",
+            clients: "Clients",
+            stores: "Stores",
+            ourHistory: "Our History",
+            description:
+                "Eurocosmetics is the official distributor of the best European cosmetic brands in Turkmenistan. We offer a wide range of cosmeceutical products – the result of collaboration between pharmacists and cosmetic companies in Europe – to maintain and enhance your unique beauty: skin care products, hair care products, cosmetics, etc. Eurocosmetics.tm opens the way to beauty and proper skin care. You deserve to use the best.",
+            revolution: "Beauty revolution without compromise!",
+        },
+        social: {
+            followUs: "Follow us:",
+        },
+        home: {
+            createBeauty: "Beauty will save",
+            together: "the world",
+            officialDistributors: "Official distributors",
+            bestEuropeanBrands: "of the best European brands",
+            wideRange: "Wide range",
+            cosmeceuticalProducts: "of cosmeceutical products",
+            reputation: "Reputation",
+            reliability: "Reliability",
+            aboutUsDescription:
+                "Eurocosmetics.tm is your official guide to the world of premium European cosmetics and niche perfumery in Turkmenistan. We proudly present products from globally renowned brands such as Vichy, La Roche-Posay, Cerave, Forrled, Catalysis, as well as exclusive perfume houses: Memo Paris, Byredo, Vilhelm Parfumerie, The House of Oud, and others. \n\n Our carefully curated collection includes cosmeceuticals—a unique blend of pharmaceutical research and cosmetic innovation from Europe and Japan—as well as rare fragrances designed for true connoisseurs of the perfumery art. We strive to emphasize and preserve your individuality by offering high-quality skincare, haircare, makeup products, and exquisite fragrances.",
+            moreInfo: "More info",
+            cooperation: "Cooperation",
+            cooperationDescription:
+                "We offer favorable cooperation conditions for our partners. Join us and grow your business with Eurocosmetics.",
+            products: "Products",
+            careCosmetics: "Care cosmetics",
+            careCosmeticsDescription:
+                "High-quality skin and hair care products.",
+            perfumes: "Perfumes",
+            perfumesDescription: "Fragrances from the best European brands.",
+            decorativeCosmetics: "Decorative cosmetics",
+            decorativeCosmeticsDescription:
+                "A wide range of decorative cosmetics.",
+            forChildren: "For children",
+            forChildrenDescription:
+                "Safe and high-quality products for children.",
+            forMen: "For men",
+            forMenDescription: "Cosmetics and perfumes for men.",
+            hairCare: "Hair care",
+            hairCareDescription: "Hair care products.",
+            locationDescription:
+                "Our stores are conveniently located in the city.",
+            Arkach: "Arkach",
+            Berkarar: "Berkarar",
+            Gulzemin: "Gulzemin",
+            Ashgabad: "Ashgabad mall",
+            ArkachAddress: "1st floor, opposite Kymil Market",
+            GulzeminAddress: "1st floor, Chopan Market",
+            BerkararAddress: "1st floor (entrance from parking)",
+            AshgabadAddress: "1st floor, B1-21",
+        },
+        footer: {
+            home: "Home",
+            about: "About",
+            products: "Products",
+            contacts: "Contacts",
+            poweredBy: "Powered by LTM",
+        },
+        hero: {
+            of_your: "of your",
+            beauty_and_style: "beauty & style",
+        },
     },
-    menu: {
-      home: "Главная",
-      products: "Продукция",
-      about: "О компании",
-      contacts: "Контакты"
+    tm: {
+        header: {
+            contacts: "Habarlaşmak",
+        },
+        form: {
+            contactForm: "Habarlaşmak Formasy",
+            focusOnPartners: "HARYT ŞERTLERINE ÜNS BERÝÄR",
+            description:
+                "Biz harytlaryň halkan resmi paýlaýjysy, ýokary hilli önümleri we peýdaly hyzmatdaşlyk şertlerini hödürleýäris. Bize goşulyň!",
+            name: "Adyňyz",
+            email: "Email",
+            phone: "Telefon",
+            message: "Habarlama",
+            send: "Ugrat",
+        },
+        menu: {
+            home: "Baş sahypa",
+            products: "Önümler",
+            about: "Kompaniýa barada",
+            contacts: "Habarlaşmak",
+        },
+        about: {
+            title: "Biz barada",
+            products: "Harytlar",
+            clients: "Müşderiler",
+            stores: "Dükanlar",
+            ourHistory: "Biziň taryhymyz",
+            description:
+                "Eurocosmetics – Türkmenistanda iň gowy Ýewropa kosmetika markalarynyň resmi paýlaýjylary. Bizde kosmeseutika önümleriniň giň görnüşi bar – farmasewtler we Ýewropa kosmetika kompaniýalarynyň hyzmatdaşlygynyň netijesi – siziň özboluşly gözelligiňizi saklamak we köpeltmek üçin: deri ideg önümleri, saç ideg önümleri, kosmetika we ş.m. Eurocosmetics.tm gözellik we mynasyp deri idegine ýol açýar. Siz iň gowusyny ulanmagy mynasyp.",
+            revolution: "Ylalaşyksyz gözellik rewolýusiýasy!",
+        },
+        social: {
+            followUs: "Bizi yzarlaň:",
+        },
+        home: {
+            createBeauty: "Gözellik halas eder",
+            together: "dünýä",
+            officialDistributors: "Resmi paýlaýjylar",
+            bestEuropeanBrands: "iň gowy Ýewropa markalarynyň",
+            wideRange: "Giň görnüş",
+            cosmeceuticalProducts: "kosmeseutika önümleriniň",
+            reputation: "Reputasiýa",
+            reliability: "Ygtybarlylyk",
+            aboutUsDescription:
+                "Eurocosmetics.tm — Türkmenistandaky ýokary hilli Ýewropa kosmetikasynyň hem-de özboluşly parfýumeriýanyň dünýäsine siziň resmi ýolbeletňizdir. Biz buýsanmak bilen dünýä belli Vichy, La Roche-Posay, Cerave, Forrled, Catalysis ýaly giňden tanalýan önümleriň, şeýle hem Memo Paris, Byredo, Vilhelm Parfumerie, The House of Oud we beýleki gymmatly parfýumeriýa öýleriniň önümlerini hödürleýäris.\n\n Üns bilen saýlanyşykly ýygyndymyz Ýewropa hem-de Ýaponiýanyň derman senagatynyň we kosmetik innowasion ösüşleriniň utgaşmasy bolan kosmeseutika bilen bir hatarda, hakyky parfýumeriýa sungatynyň muşdaklary üçin döredilen seýrek ys-süssileri hem öz içine alýar. Biz siziň özboluşlylygyňyzy aýan etmek we gorap saklamak üçin ýokary hilli deri bejergisi, saç bejergisi, bezeg kosmetikasy hem-de ajaýyp atyrlar ýaly önümleri hödürleýäris.",
+            moreInfo: "Has giňişleýin",
+            cooperation: "Hyzmatdaşlyk",
+            cooperationDescription:
+                "Biziň hyzmatdaşlarymyz üçin amatly hyzmatdaşlyk şertlerini hödürleýäris. Bize goşulyň we Eurocosmetics bilen işiňizi ösdüriň.",
+            products: "Önümler",
+            careCosmetics: "Ideg kosmetikasy",
+            careCosmeticsDescription:
+                "Deri we saç idegi üçin ýokary hilli önümler.",
+            perfumes: "Atyrymlar",
+            perfumesDescription: "Iň gowy Ýewropa markalarynyň yslary.",
+            decorativeCosmetics: "Bezeg kosmetikasy",
+            decorativeCosmeticsDescription: "Bezeg kosmetikasynyň giň görnüşi.",
+            forChildren: "Çagalar üçin",
+            forChildrenDescription:
+                "Çagalar üçin howpsuz we ýokary hilli önümler.",
+            forMen: "Erkekler üçin",
+            forMenDescription: "Erkekler üçin kosmetika we atyrymlar.",
+            hairCare: "Saç idegi",
+            hairCareDescription: "Saç idegi üçin önümler.",
+            locationDescription:
+                "Biziň dükanlarymyz şäheriň amatly ýerlerinde ýerleşýär.",
+            Arkach: "Arkach",
+            Berkarar: "Berkarar",
+            Gulzemin: "Gulzemin",
+            Ashgabad: "Ashgabad mall",
+            ArkachAddress: "1 gat garşy Kямil market",
+            GulzeminAddress: "1 gat. Çopan Market",
+            BerkararAddress: "1 gat (gahanda garaž tarapyndan giriş)",
+            AshgabadAddress: "1 gat B1-21",
+        },
+        footer: {
+            home: "Baş sahypa",
+            about: "Biz barada",
+            products: "Önümler",
+            contacts: "Habarlaşmak",
+            poweredBy: "LTM tarapyndan üpjün edilen",
+        },
+        hero: {
+            of_your: "siziň",
+            beauty_and_style: "gözellik we stil",
+        },
     },
-    about: {
-      title: "О нас",
-      products: "Товаров",
-      clients: "Клиентов",
-      stores: "Магазинов",
-      ourHistory: "Наша история",
-      description: "Eurocosmetics – официальные дистрибьюторы лучших европейских косметических брендов в Туркменистане. У нас представлен широкий ассортимент продуктов космоцевтики – результат сотрудничества фармацевтов и косметических компаний Европы – для поддержания и преумножения Вашей уникальной красоты: средства по уходу за кожей, волосами, косметика и т.д. Eurocosmetics.tm открывает путь к красоте и достойному уходу за кожей. Вы заслуживаете пользоваться самым лучшим.",
-      revolution: "Революция красоты без компромиссов!"
-    },
-    social: {
-      followUs: "Следите за нами:"
-    },
-    home: {
-      createBeauty: "Создаём красоту",
-      together: "вместе",
-      officialDistributors: "Официальные дистрибьюторы",
-      bestEuropeanBrands: "лучших европейских брендов",
-      wideRange: "Широкий ассортимент",
-      cosmeceuticalProducts: "космоцевтических продуктов",
-      reputation: "Репутация",
-      reliability: "Надёжность",
-      aboutUsDescription: "Eurocosmetics – официальные дистрибьюторы лучших европейских косметических брендов в Туркменистане. У нас представлен широкий ассортимент продуктов космоцевтики – результат сотрудничества фармацевтов и косметических компаний Европы – для поддержания и преумножения Вашей уникальной красоты: средства по уходу за кожей, волосами, косметика и т.д. Eurocosmetics.tm открывает путь к красоте и достойному уходу за кожей. Вы заслуживаете пользоваться самым лучшим.",
-      moreInfo: "Подробнее",
-      cooperation: "Сотрудничество",
-      cooperationDescription: "Мы предлагаем выгодные условия сотрудничества для наших партнёров. Присоединяйтесь к нам и развивайте свой бизнес вместе с Eurocosmetics.",
-      products: "Продукция",
-      careCosmetics: "Уходовая косметика",
-      careCosmeticsDescription: "Высококачественные средства для ухода за кожей и волосами.",
-      perfumes: "Парфюмерия",
-      perfumesDescription: "Ароматы от лучших европейских брендов.",
-      decorativeCosmetics: "Декоративная косметика",
-      decorativeCosmeticsDescription: "Широкий ассортимент декоративной косметики.",
-      forChildren: "Для детей",
-      forChildrenDescription: "Безопасные и качественные продукты для детей.",
-      forMen: "Для мужчин",
-      forMenDescription: "Косметика и парфюмерия для мужчин.",
-      hairCare: "Уход за волосами",
-      hairCareDescription: "Средства для ухода за волосами.",
-      locationDescription: "Наши магазины расположены в удобных местах города.",
-      Arkach: "ТЦ Аркач",
-      Berkarar: "ТЦ Беркарар",
-      Gulzemin: "ТЦ Гулземин",
-      Ashgabad: "Ашгабад молл",
-      ArkachAddress: "1эт. напротив Кямил маркета",
-      GulzeminAddress: "1эт. Чопан Маркет",
-      BerkararAddress: "1эт. (вход со стороны парковки)",
-      AshgabadAddress: "1эт. B1-21"
-    },
-    footer: {
-      home: "Главная",
-      about: "О нас",
-      products: "Продукты",
-      contacts: "Контакты",
-      poweredBy: "Power by LTM",
-    },
-    hero: {
-      of_your: "вашей",
-      beauty_and_style: "красота и стиль"
-    }
-  },
-  en: {
-    header: {
-      contacts: "Contacts"
-    },
-    form: {
-      contactForm: "Contact Form",
-      focusOnPartners: "FOCUS ON PARTNERS",
-      description: "We are the official distributor of cosmetics, offering high quality products and competitive cooperation conditions. Join us!",
-      name: "Name",
-      email: "Email",
-      phone: "Phone",
-      message: "Message",
-      send: "Send"
-    },
-    menu: {
-      home: "Home",
-      products: "Products",
-      about: "About",
-      contacts: "Contacts"
-    },
-    about: {
-      title: "About Us",
-      products: "Products",
-      clients: "Clients",
-      stores: "Stores",
-      ourHistory: "Our History",
-      description: "Eurocosmetics is the official distributor of the best European cosmetic brands in Turkmenistan. We offer a wide range of cosmeceutical products – the result of collaboration between pharmacists and cosmetic companies in Europe – to maintain and enhance your unique beauty: skin care products, hair care products, cosmetics, etc. Eurocosmetics.tm opens the way to beauty and proper skin care. You deserve to use the best.",
-      revolution: "Beauty revolution without compromise!"
-    },
-    social: {
-      followUs: "Follow us:"
-    },
-    home: {
-      createBeauty: "Creating beauty",
-      together: "together",
-      officialDistributors: "Official distributors",
-      bestEuropeanBrands: "of the best European brands",
-      wideRange: "Wide range",
-      cosmeceuticalProducts: "of cosmeceutical products",
-      reputation: "Reputation",
-      reliability: "Reliability",
-      aboutUsDescription: "Eurocosmetics is the official distributor of the best European cosmetic brands in Turkmenistan. We offer a wide range of cosmeceutical products – the result of collaboration between pharmacists and cosmetic companies in Europe – to maintain and enhance your unique beauty: skin care products, hair care products, cosmetics, etc. Eurocosmetics.tm opens the way to beauty and proper skin care. You deserve to use the best.",
-      moreInfo: "More info",
-      cooperation: "Cooperation",
-      cooperationDescription: "We offer favorable cooperation conditions for our partners. Join us and grow your business with Eurocosmetics.",
-      products: "Products",
-      careCosmetics: "Care cosmetics",
-      careCosmeticsDescription: "High-quality skin and hair care products.",
-      perfumes: "Perfumes",
-      perfumesDescription: "Fragrances from the best European brands.",
-      decorativeCosmetics: "Decorative cosmetics",
-      decorativeCosmeticsDescription: "A wide range of decorative cosmetics.",
-      forChildren: "For children",
-      forChildrenDescription: "Safe and high-quality products for children.",
-      forMen: "For men",
-      forMenDescription: "Cosmetics and perfumes for men.",
-      hairCare: "Hair care",
-      hairCareDescription: "Hair care products.",
-      locationDescription: "Our stores are conveniently located in the city.",
-      Arkach: "Arkach",
-      Berkarar: "Berkarar",
-      Gulzemin: "Gulzemin",
-      Ashgabad: "Ashgabad mall",
-      ArkachAddress: "1st floor, opposite Kymil Market",
-      GulzeminAddress: "1st floor, Chopan Market",
-      BerkararAddress: "1st floor (entrance from parking)",
-      AshgabadAddress: "1st floor, B1-21"
-    },
-    footer: {
-      home: "Home",
-      about: "About",
-      products: "Products",
-      contacts: "Contacts",
-      poweredBy: "Powered by LTM",
-    },
-    hero: {
-      of_your: "of your",
-      beauty_and_style: "beauty & style"
-    }
-  },
-  tm: {
-    header: {
-      contacts: "Habarlaşmak"
-    },
-    form: {
-      contactForm: "Habarlaşmak Formasy",
-      focusOnPartners: "HARYT ŞERTLERINE ÜNS BERÝÄR",
-      description: "Biz harytlaryň halkan resmi paýlaýjysy, ýokary hilli önümleri we peýdaly hyzmatdaşlyk şertlerini hödürleýäris. Bize goşulyň!",
-      name: "Adyňyz",
-      email: "Email",
-      phone: "Telefon",
-      message: "Habarlama",
-      send: "Ugrat"
-    },
-    menu: {
-      home: "Baş sahypa",
-      products: "Önümler",
-      about: "Kompaniýa barada",
-      contacts: "Habarlaşmak"
-    },
-    about: {
-      title: "Biz barada",
-      products: "Harytlar",
-      clients: "Müşderiler",
-      stores: "Dükanlar",
-      ourHistory: "Biziň taryhymyz",
-      description: "Eurocosmetics – Türkmenistanda iň gowy Ýewropa kosmetika markalarynyň resmi paýlaýjylary. Bizde kosmeseutika önümleriniň giň görnüşi bar – farmasewtler we Ýewropa kosmetika kompaniýalarynyň hyzmatdaşlygynyň netijesi – siziň özboluşly gözelligiňizi saklamak we köpeltmek üçin: deri ideg önümleri, saç ideg önümleri, kosmetika we ş.m. Eurocosmetics.tm gözellik we mynasyp deri idegine ýol açýar. Siz iň gowusyny ulanmagy mynasyp.",
-      revolution: "Ylalaşyksyz gözellik rewolýusiýasy!"
-    },
-    social: {
-      followUs: "Bizi yzarlaň:"
-    },
-    home: {
-      createBeauty: "Gözellik döredýäris",
-      together: "bilelikde",
-      officialDistributors: "Resmi paýlaýjylar",
-      bestEuropeanBrands: "iň gowy Ýewropa markalarynyň",
-      wideRange: "Giň görnüş",
-      cosmeceuticalProducts: "kosmeseutika önümleriniň",
-      reputation: "Reputasiýa",
-      reliability: "Ygtybarlylyk",
-      aboutUsDescription: "Eurocosmetics – Türkmenistanda iň gowy Ýewropa kosmetika markalarynyň resmi paýlaýjylary. Bizde kosmeseutika önümleriniň giň görnüşi bar – farmasewtler we Ýewropa kosmetika kompaniýalarynyň hyzmatdaşlygynyň netijesi – siziň özboluşly gözelligiňizi saklamak we köpeltmek üçin: deri ideg önümleri, saç ideg önümleri, kosmetika we ş.m. Eurocosmetics.tm gözellik we mynasyp deri idegine ýol açýar. Siz iň gowusyny ulanmagy mynasyp.",
-      moreInfo: "Has giňişleýin",
-      cooperation: "Hyzmatdaşlyk",
-      cooperationDescription: "Biziň hyzmatdaşlarymyz üçin amatly hyzmatdaşlyk şertlerini hödürleýäris. Bize goşulyň we Eurocosmetics bilen işiňizi ösdüriň.",
-      products: "Önümler",
-      careCosmetics: "Ideg kosmetikasy",
-      careCosmeticsDescription: "Deri we saç idegi üçin ýokary hilli önümler.",
-      perfumes: "Atyrymlar",
-      perfumesDescription: "Iň gowy Ýewropa markalarynyň yslary.",
-      decorativeCosmetics: "Bezeg kosmetikasy",
-      decorativeCosmeticsDescription: "Bezeg kosmetikasynyň giň görnüşi.",
-      forChildren: "Çagalar üçin",
-      forChildrenDescription: "Çagalar üçin howpsuz we ýokary hilli önümler.",
-      forMen: "Erkekler üçin",
-      forMenDescription: "Erkekler üçin kosmetika we atyrymlar.",
-      hairCare: "Saç idegi",
-      hairCareDescription: "Saç idegi üçin önümler.",
-      locationDescription: "Biziň dükanlarymyz şäheriň amatly ýerlerinde ýerleşýär.",
-      Arkach: "Arkach",
-      Berkarar: "Berkarar",
-      Gulzemin: "Gulzemin",
-      Ashgabad: "Ashgabad mall",
-      ArkachAddress: "1 gat garşy Kямil market",
-      GulzeminAddress: "1 gat. Çopan Market",
-      BerkararAddress: "1 gat (gahanda garaž tarapyndan giriş)",
-      AshgabadAddress: "1 gat B1-21"
-    },
-    footer: {
-      home: "Baş sahypa",
-      about: "Biz barada",
-      products: "Önümler",
-      contacts: "Habarlaşmak",
-      poweredBy: "LTM tarapyndan üpjün edilen",
-    },
-    hero: {
-      of_your: "siziň",
-      beauty_and_style: "gözellik we stil"
-    }
-  }
 };

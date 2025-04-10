@@ -31,6 +31,28 @@
           <p class="text-lg mt-4" style="color: #F0C8E0B2;">
             {{ $t("form.description") }}
           </p>
+            <div class="flex flex-col items-start justify-center gap-4 mt-3">
+            <a href="tel:+99363593663" class="text-[#F0C8E0] hover:underline flex items-center gap-2">
+              <i class="fa fa-phone"></i> +99363593663
+            </a>
+            <a href="tel:+99312964867" class="text-[#F0C8E0] hover:underline flex items-center gap-2">
+              <i class="fa fa-phone"></i> +993 12 96-48-67
+            </a>
+            <a href="tel:+99312964866" class="text-[#F0C8E0] hover:underline flex items-center gap-2">
+              <i class="fa fa-phone"></i> +993 12 96-48-66
+            </a>
+            <a href="mailto:sales@eurocosmeticstm.com" class="text-[#F0C8E0] hover:underline flex items-center gap-2">
+              <i class="fa fa-envelope"></i> sales@eurocosmeticstm.com
+            </a>
+            <a href="https://www.instagram.com/eurocosmetics.tm/?hl=ru" target="_blank" rel="noopener noreferrer"
+              class="text-[#F0C8E0] hover:underline flex items-center gap-2">
+              <i class="fab fa-instagram"></i>instagram.com/eurocosmetics.tm
+            </a>
+            <a href="https://www.tiktok.com/@eurocosmetics.tm" target="_blank" rel="noopener noreferrer"
+              class="text-[#F0C8E0] hover:underline flex items-center gap-2">
+              <i class="fab fa-tiktok"></i> tiktok.com/@eurocosmetics.tm
+            </a>
+            </div>
         </div>
         <div class="lg:w-1/2 w-full">
           <form @submit.prevent="submitForm" class="space-y-4 p-6"

@@ -19,10 +19,8 @@
 }
 
 body {
-    background-color: var(--pink);
     font-family: 'Montserrat', sans-serif;
     width: 100%;
-    cursor: url('/img/cursor.png') 16 16, auto;
 }
 
 .container {
