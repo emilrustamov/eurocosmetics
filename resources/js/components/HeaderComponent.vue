@@ -1,5 +1,6 @@
 <template>
   <header class="bg-[#f8f9fa] sticky top-0 shadow-md z-99">
+    <link rel="stylesheet" href="/css/all.min.css">
     <div class="container mx-auto px-4 flex items-center justify-between">
       <div class="md:hidden flex items-center">
       <button @click="toggleMenu" class="text-[var(--gold)] focus:outline-none">
