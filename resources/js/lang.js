@@ -27,7 +27,7 @@ export default {
             stores: "Магазинов",
             ourHistory: "Наша история",
             description:
-                "Eurocosmetics – официальные дистрибьюторы лучших европейских косметических брендов в Туркменистане. У нас представлен широкий ассортимент продуктов космоцевтики – результат сотрудничества фармацевтов и косметических компаний Европы – для поддержания и преумножения Вашей уникальной красоты: средства по уходу за кожей, волосами, косметика и т.д. Eurocosmetics.tm открывает путь к красоте и достойному уходу за кожей. Вы заслуживаете пользоваться самым лучшим.",
+                "Eurocosmetics.tm – официальные дистрибьюторы лучших европейских косметических брендов в Туркменистане. У нас представлен широкий ассортимент продуктов космоцевтики – результат сотрудничества фармацевтов и косметических компаний Европы – для поддержания и преумножения Вашей уникальной красоты: средства по уходу за кожей, волосами, косметика и т.д. Eurocosmetics.tm открывает путь к красоте и достойному уходу за кожей. Вы заслуживаете пользоваться самым лучшим.",
             revolution: "Революция красоты без компромиссов!",
         },
         social: {
@@ -35,6 +35,8 @@ export default {
         },
         home: {
             createBeauty: "Красота спасет",
+            brands: "Бренды",
+            stores: "Наши магазины",
             together: "мир",
             officialDistributors: "Официальные дистрибьюторы",
             bestEuropeanBrands: "лучших европейских брендов",
@@ -67,13 +69,16 @@ export default {
             locationDescription:
                 "Наши магазины расположены в удобных местах города.",
             Arkach: "ТЦ Аркач",
+            Zielinskiy: "Zielinski&Rozen",
             Berkarar: "ТЦ Беркарар",
             Gulzemin: "ТЦ Гулземин",
             Ashgabad: "Ашгабад молл",
-            ArkachAddress: "1эт. напротив Кямил маркета",
-            GulzeminAddress: "1эт. Чопан Маркет",
-            BerkararAddress: "1эт. (вход со стороны парковки)",
-            AshgabadAddress: "1эт. B1-21",
+            ArkachAddress: "г. Ашхабад, ул. Махтумкули, ТРЦ «Аркач» 1-ый этаж, (напротив Кямиль маркета)",
+            GulzeminAddress: "г. Ашхабад, ул. Таслама, ТРЦ «Гульземин» 1-ый этаж, (Чопан маркет)",
+            BerkararAddress: "г. Ашхабад, ул. Ататюрк 80, ТРЦ «Беркарар» 1-ый этаж, (со стороны стоянки)",
+            AshgabadAddress: "г. Ашхабад, ул. Тахран, ТРЦ «Ашхабад» 1-ый этаж, блок-В, магазин В - 1.21",
+            ZielinskiyAddress: "Zielinski&Rozen, г. Ашхабад, ул. Ататюрк 80, ТРЦ «Беркарар» 1-ый этаж, (на кругу)",
+           
         },
         footer: {
             home: "Главная",
@@ -123,6 +128,8 @@ export default {
         },
         home: {
             createBeauty: "Beauty will save",
+            brands: "Brands",
+            stores: "Our stores",
             together: "the world",
             officialDistributors: "Official distributors",
             bestEuropeanBrands: "of the best European brands",
@@ -158,10 +165,13 @@ export default {
             Berkarar: "Berkarar",
             Gulzemin: "Gulzemin",
             Ashgabad: "Ashgabad mall",
-            ArkachAddress: "1st floor, opposite Kymil Market",
-            GulzeminAddress: "1st floor, Chopan Market",
-            BerkararAddress: "1st floor (entrance from parking)",
-            AshgabadAddress: "1st floor, B1-21",
+            Zielinskiy: "Zielinski&Rozen",
+            ArkachAddress: "Ashgabat, Makhtumkuli Street, Arkach Mall, 1st floor, (opposite Kymil Market)",
+            GulzeminAddress: "Ashgabat, Taslama Street, Gulzemin Mall, 1st floor, (Chopan Market)",
+            BerkararAddress: "Ashgabat, Ataturk Street 80, Berkarar Mall, 1st floor, (from the parking side)",
+            AshgabadAddress: "Ashgabat, Tehran Street, Ashgabat Mall, 1st floor, Block-B, Shop B-1.21",
+            ZielinskiyAddress: "Zielinski&Rozen, Ashgabat, Ataturk Street 80, Berkarar Mall, 1st floor, (at the roundabout)",
+           
         },
         footer: {
             home: "Home",
@@ -203,7 +213,7 @@ export default {
             stores: "Dükanlar",
             ourHistory: "Biziň taryhymyz",
             description:
-                "Eurocosmetics – Türkmenistanda iň gowy Ýewropa kosmetika markalarynyň resmi paýlaýjylary. Bizde kosmeseutika önümleriniň giň görnüşi bar – farmasewtler we Ýewropa kosmetika kompaniýalarynyň hyzmatdaşlygynyň netijesi – siziň özboluşly gözelligiňizi saklamak we köpeltmek üçin: deri ideg önümleri, saç ideg önümleri, kosmetika we ş.m. Eurocosmetics.tm gözellik we mynasyp deri idegine ýol açýar. Siz iň gowusyny ulanmagy mynasyp.",
+                "Eurocosmetics.tm – Türkmenistanda iň gowy Ýewropa kosmetika markalarynyň resmi paýlaýjylary. Bizde kosmeseutika önümleriniň giň görnüşi bar – farmasewtler we Ýewropa kosmetika kompaniýalarynyň hyzmatdaşlygynyň netijesi – siziň özboluşly gözelligiňizi saklamak we köpeltmek üçin: deri ideg önümleri, saç ideg önümleri, kosmetika we ş.m. Eurocosmetics.tm gözellik we mynasyp deri idegine ýol açýar. Siz iň gowusyny ulanmagy mynasyp.",
             revolution: "Ylalaşyksyz gözellik rewolýusiýasy!",
         },
         social: {
@@ -211,6 +221,8 @@ export default {
         },
         home: {
             createBeauty: "Gözellik halas eder",
+            brands: "Markalar",
+            stores: "Dükanlar",
             together: "dünýä",
             officialDistributors: "Resmi paýlaýjylar",
             bestEuropeanBrands: "iň gowy Ýewropa markalarynyň",
@@ -245,10 +257,13 @@ export default {
             Berkarar: "Berkarar",
             Gulzemin: "Gulzemin",
             Ashgabad: "Ashgabad mall",
-            ArkachAddress: "1 gat garşy Kямil market",
-            GulzeminAddress: "1 gat. Çopan Market",
-            BerkararAddress: "1 gat (gahanda garaž tarapyndan giriş)",
-            AshgabadAddress: "1 gat B1-21",
+            Zielinskiy: "Zielinski&Rozen",
+            ArkachAddress: "Aşgabat, Magtymguly köçesi, Arkach Söwda Merkezi, 1-nji gat, (Kämil Marketiň garşysynda)",
+            GulzeminAddress: "Aşgabat, Taslama köçesi, Gülzemin Söwda Merkezi, 1-nji gat, (Çopan Market)",
+            BerkararAddress: "Aşgabat, Atatürk köçesi 80, Berkarar Söwda Merkezi, 1-nji gat, (duralganyň tarapyndan)",
+            AshgabadAddress: "Aşgabat, Tähran köçesi, Aşgabat Söwda Merkezi, 1-nji gat, B bloky, B-1.21 dükan",
+            ZielinskiyAddress: "Zielinski&Rozen, Aşgabat, Atatürk köçesi 80, Berkarar Söwda Merkezi, 1-nji gat, (tegelekde)",
+        
         },
         footer: {
             home: "Baş sahypa",

@@ -1,14 +1,14 @@
 @font-face {
-    font-family: 'Mont';
-    src: url('/fonts/mont.otf') format('opentype');
+    font-family: 'CenturyGothic';
+    src: url('/fonts/centurygothic.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Mons';
-    src: url('/fonts/mons.ttf') format('truetype');
-    font-weight: normal;
+    font-family: 'CenturyGothic';
+    src: url('/fonts/centurygothic_bold.ttf') format('truetype');
+    font-weight: bold;
     font-style: normal;
 }
 
@@ -19,7 +19,7 @@
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'CenturyGothic', sans-serif;
     width: 100%;
 }
 
@@ -209,8 +209,8 @@ body {
     background-size: cover;
     background-position: center;
     position: absolute;
-    top: 20%;
-    left: 10%;
+    top: 23%;
+    left: 25%;
     width: 800px;
     height: 800px;
     transform: translate(-50%, -50%);
@@ -252,14 +252,36 @@ body {
     opacity: 1;
     transform: translateY(0);
 }
+/* Десктопная карусель с двумя рядами */
+.desktopSwiper {
+    height: 280px; /* Фиксированная высота для двух рядов */
+    padding: 0 40px;
+  }
+  
+  .desktopSwiper .swiper-slide {
+    height: 120px !important; /* Высота одного слайда */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Адаптация для разных разрешений */
+  @media (max-width: 1440px) {
+    .desktopSwiper {
+      height: 240px;
+    }
+    .desktopSwiper .swiper-slide {
+      height: 100px !important;
+    }
+  }
 
-.swiper {
+/* .swiper {
     width: 300px;
     height: 600px;
     perspective: 1000px;
-}
+} */
 
-.swiper-slide {
+/* .swiper-slide {
     text-align: center;
     font-size: 18px;
     background: #fff;
@@ -301,7 +323,7 @@ body {
 
 .scale img:hover {
     transform: scale(1.2);
-}
+} */
 
 ::-webkit-scrollbar {
     width: 8px;

@@ -1,22 +1,25 @@
 <template>
   <footer class="bg-[#1E1927] text-white text-center">
-    <div class="mb-3 py-10">
+    <div class=" py-10">
       <h2
         class="underline decoration-2 underline-offset-5 text-xl font-semibold uppercase tracking-wider text-[#DFABCA] mb-3">
-        Eurocosmetics
+        Eurocosmetics.tm
       </h2>
+      <div class="mb-2 mx-auto w-28 h-28 flex items-center justify-center">
+        <img :src="'/img/logo.png'" alt="Logo" class="w-28 h-28 object-contain">
+      </div>
     </div>
 
     <nav class="mb-3">
       <!-- Мобильное меню -->
       <ul class="flex justify-center gap-6 text-[20px] py-10 md:hidden">
         <li>
-          <a href="#home" class="text-[#DFABCA] hover:underline">
+          <a href="#home" class="text-[#DFABCA] hover:underline" @click.prevent="scrollToSection('#home')">
             <i class="fa fa-home"></i>
           </a>
         </li>
         <li>
-          <a href="#about" class="text-[#DFABCA] hover:underline">
+          <a href="#about" class="text-[#DFABCA] hover:underline" @click.prevent="scrollToSection('#about')">
             <i class="fa fa-info-circle"></i>
           </a>
         </li>
@@ -26,7 +29,7 @@
           </a>
         </li>
         <li>
-          <a href="#contact" class="text-[#DFABCA] hover:underline">
+          <a href="#contact" class="text-[#DFABCA] hover:underline" @click.prevent="scrollToSection('#contact')">
             <i class="fa fa-phone-alt"></i>
           </a>
         </li>
@@ -35,16 +38,16 @@
       <!-- Десктопное меню -->
       <ul class="hidden md:flex justify-center gap-6 text-[20px] py-10">
         <li>
-          <a href="/" class="text-[#DFABCA] hover:underline">{{ $t("footer.home") }}</a>
+          <a href="#home" class="text-[#DFABCA] hover:underline" @click.prevent="scrollToSection('#home')">{{ $t("footer.home") }}</a>
         </li>
         <li>
-          <a href="/about" class="text-[#DFABCA] hover:underline">{{ $t("footer.about") }}</a>
+          <a href="#about" class="text-[#DFABCA] hover:underline" @click.prevent="scrollToSection('#about')">{{ $t("footer.about") }}</a>
         </li>
         <li>
           <a href="https://eurocosmetics.com.tm/" class="text-[#DFABCA] hover:underline">{{ $t("footer.products") }}</a>
         </li>
         <li>
-          <a href="/contact" class="text-[#DFABCA] hover:underline">{{ $t("footer.contacts") }}</a>
+          <a href="#contact" class="text-[#DFABCA] hover:underline" @click.prevent="scrollToSection('#contact')">{{ $t("footer.contacts") }}</a>
         </li>
       </ul>
     </nav>
@@ -53,8 +56,8 @@
     <div class="mb-6">
       <div class="flex flex-col md:flex-row items-center justify-center gap-6 text-lg">
         <!-- Телефон -->
-        <a href="tel:+99363593663" class="text-[#DFABCA] hover:underline flex items-center gap-2">
-          <i class="fa fa-phone"></i> +99363593663
+        <a href="tel:+99312964867" class="text-[#DFABCA] hover:underline flex items-center gap-2">
+          <i class="fa fa-phone"></i> +99312964867
         </a>
         <!-- Email -->
         <a href="mailto:sales@eurocosmeticstm.com" class="text-[#DFABCA] hover:underline flex items-center gap-2">
@@ -62,16 +65,12 @@
         </a>
         <!-- Instagram -->
         <a href="https://www.instagram.com/eurocosmetics.tm/?hl=ru"
-           class="text-[#DFABCA] hover:underline flex items-center gap-2" 
-           target="_blank"
-           rel="noopener noreferrer">
+          class="text-[#DFABCA] hover:underline flex items-center gap-2" target="_blank" rel="noopener noreferrer">
           <i class="fab fa-instagram"></i>
         </a>
         <!-- TikTok (требует иконку 'fab fa-tiktok' в новой версии Font Awesome) -->
         <a href="https://www.tiktok.com/@eurocosmetics.tm"
-           class="text-[#DFABCA] hover:underline flex items-center gap-2"
-           target="_blank"
-           rel="noopener noreferrer">
+          class="text-[#DFABCA] hover:underline flex items-center gap-2" target="_blank" rel="noopener noreferrer">
           <i class="fab fa-tiktok"></i>
         </a>
       </div>
@@ -88,7 +87,18 @@
 
 <script>
 export default {
-  name: 'FooterComponent'
+  name: 'FooterComponent',
+  methods: {
+    scrollToSection(id) {
+      const element = document.querySelector(id);
+      if (element) {
+        window.scrollTo({
+          top: element.offsetTop,
+          behavior: 'smooth'
+        });
+      }
+    }
+  }
 }
 </script>
 

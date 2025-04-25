@@ -32,8 +32,8 @@
             {{ $t("form.description") }}
           </p>
             <div class="flex flex-col items-start justify-center gap-4 mt-3">
-            <a href="tel:+99363593663" class="text-[#F0C8E0] hover:underline flex items-center gap-2">
-              <i class="fa fa-phone"></i> +99363593663
+            <a href="tel:+99312964867" class="text-[#F0C8E0] hover:underline flex items-center gap-2">
+              <i class="fa fa-phone"></i> +99312964867
             </a>
             <a href="tel:+99312964867" class="text-[#F0C8E0] hover:underline flex items-center gap-2">
               <i class="fa fa-phone"></i> +993 12 96-48-67
