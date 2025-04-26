@@ -40,8 +40,8 @@
     </div>
     <div v-else>
       <section id="home" class="relative w-full h-screen max-h-[1200px] overflow-hidden animate-block">
-        <img :src="'/img/mainbanner.jpg'" alt="Banner"
-          class="w-full h-full object-cover object-[center_35%] animate-image">
+        <img :data-src="'/img/mainbanner.jpg'" alt="Banner"
+          class="w-full h-full object-cover object-[center_35%] animate-image lazyload">
         <div class="absolute inset-0 bg-[linear-gradient(57.99deg,_#FCE7F3_0%,_#E8C4E6_47.5%)] opacity-70"></div>
         <div class="absolute inset-0 flex flex-col items-center justify-center">
           <span class="text-white text-[14px] font-normal uppercase py-10 animate-text">
@@ -57,7 +57,7 @@
       <section id="about" class="relative">
         <div class="container mx-auto px-5">
           <div
-            class="relative mx-auto max-w-[400px] text-center transform -translate-y-1/2 z-30 p-[20px] bg-[#fff] rounded shadow animate-block">
+            class="relative mx-auto max-w-[400px] text-center transform -translate-y-1/2 z-30 p-[10px] bg-[#fff] rounded shadow animate-block">
             <video autoplay muted loop class="w-full max-h-[660px] object-contain">
               <source :src="'/img/video.mp4'" type="video/mp4">
               Your browser does not support HTML5 video.
@@ -130,14 +130,14 @@
               </div>
             </div>
             <!-- Текстовая часть About Us -->
-            <div class="text-center text-[20px] text-[var(--gold)] animate-block lg:w-1/2 w-full">
-              <div class="mb-2 mx-auto w-28 h-28 flex items-center justify-center animate-image">
-                <img :src="'/img/logo.png'" alt="Logo" class="w-28 h-28 object-contain">
+            <div class="text-center text-[20px] text-[var(--gold)]  lg:w-1/2 w-full">
+              <div class="mb-2 mx-auto w-28 h-28 flex items-center justify-center ">
+                <img :data-src="'/img/logo.png'" alt="Logo" class="w-28 h-28 object-contain lazyload">
               </div>
-              <h2 class="mb-2 lg:text-[40px] md:text-3xl tracking-[5px] uppercase py-5 animate-text">
+              <h2 class="mb-2 lg:text-[40px] md:text-3xl tracking-[5px] uppercase py-5 t">
                 {{ $t("about.title") }}
               </h2>
-              <p class="mx-auto text-justify pb-5 animate-text whitespace-pre-line w-full lg:w-3/4">
+              <p class="mx-auto text-justify pb-5 whitespace-pre-line w-full lg:w-3/4">
 
                 {{ $t("home.aboutUsDescription") }}
               </p>
@@ -149,11 +149,11 @@
           <div class="flex flex-col md:flex-row-reverse items-center justify-evenly gap-5 image-container">
             <!-- Картинка Cooperation -->
             <div class="relative lg:w-1/2 w-full">
-              <div class="rounded-3xl background-overlay lg:max-w-[740px] lg:max-h-[800px] w-auto h-auto
+              <div class="rounded background-overlay lg:max-w-[740px] lg:max-h-[800px] w-auto h-auto
                  md:max-w-[400px] md:max-h-[600px] sm:max-w-[300px] sm:max-h-[400px]">
               </div>
-              <img :src="'/img/right.jpeg'" alt="Cooperation" class="rounded-3xl slide-image lg:max-w-[740px] lg:max-h-[800px] w-auto h-auto
-                 md:max-w-[400px] md:max-h-[600px] sm:max-w-[300px] sm:max-h-[400px]">
+              <img :data-src="'/img/right.jpeg'" alt="Cooperation" class="rounded slide-image lg:max-w-[740px] lg:max-h-[800px] w-auto h-auto
+                 md:max-w-[400px] md:max-h-[600px] sm:max-w-[300px] sm:max-h-[400px] lazyload">
             </div>
             <!-- Текстовая часть Cooperation -->
             <div class="text-center text-[20px] text-[var(--gold)] animate-block lg:w-1/2 w-full">
@@ -212,9 +212,9 @@
         <div class="hidden md:block">
           <div class="swiper desktopSwiper relative">
             <div class="swiper-wrapper">
-              <div v-for="n in 23" :key="n" class="swiper-slide">
-                <div class="h-54 flex items-center justify-center p-2">
-                  <img :src="`/img/logo/logo${n}.png`" :alt="`Logo ${n}`" class="max-h-full max-w-full object-contain">
+              <div v-for="n in 22" :key="n" class="swiper-slide">
+                <div class="h-80 flex items-center justify-center p-2">
+                  <img :data-src="`/img/logo/logo${n}.png`" :alt="`Logo ${n}`" class="max-h-full max-w-full object-contain lazyload">
                 </div>
               </div>
             </div>
@@ -229,7 +229,7 @@
             <div class="swiper-wrapper">
               <div v-for="n in 23" :key="n" class="swiper-slide">
                 <div class="w-40 h-40 flex items-center justify-center">
-                  <img :src="`/img/logo/logo${n}.png`" :alt="`Logo ${n}`" class="w-full h-full object-contain">
+                  <img :data-src="`/img/logo/logo${n}.png`" :alt="`Logo ${n}`" class="w-full h-full object-contain lazyload">
                 </div>
               </div>
             </div>

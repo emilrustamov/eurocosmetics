@@ -254,12 +254,12 @@ body {
 }
 /* Десктопная карусель с двумя рядами */
 .desktopSwiper {
-    height: 280px; /* Фиксированная высота для двух рядов */
+    height: 260px; /* Фиксированная высота для двух рядов */
     padding: 0 40px;
   }
   
   .desktopSwiper .swiper-slide {
-    height: 120px !important; /* Высота одного слайда */
+    height: 300px !important; /* Высота одного слайда */
     display: flex;
     align-items: center;
     justify-content: center;

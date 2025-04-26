@@ -19,6 +19,7 @@
         "@vitejs/plugin-vue": "^5.2.1",
         "jquery": "^3.7.1",
         "jquery-mousewheel": "^3.1.13",
+        "lazysizes": "^5.3.2",
         "mouse-wheel": "^1.2.0",
         "slick-carousel": "^1.8.1",
         "swiper": "^11.2.4",

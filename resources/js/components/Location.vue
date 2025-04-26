@@ -8,7 +8,7 @@
             <div class="lg:w-1/2 md:w-full">
                 <div class="sticky top-[150px] md:top-[100px] sm:top-[50px]">
                     <img :src="currentImage" alt="Store Image"
-                        class="h-auto max-h-[550px] object-contain rounded-3xl md:mx-auto md:mb-10 transition-all duration-500">
+                        class="h-auto max-h-[550px] object-contain rounded md:mx-auto md:mb-10 transition-all duration-500">
                 </div>
             </div>
             <div class="lg:w-1/2 w-full flex flex-col gap-40 items-center"> <!-- Увеличен gap -->
