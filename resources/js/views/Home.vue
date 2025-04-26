@@ -358,6 +358,11 @@ export default {
     this.hideLoader();
     window.addEventListener('scroll', this.handleScroll);
     this.animateNumbers(); // Trigger animation on mount
+    const script = document.createElement('script');
+    script.src = 'js/lazyload.js';
+    script.async = true;
+    document.body.appendChild(script);
+
   },
   beforeDestroy() { // или beforeUnmount в Vue3
     window.removeEventListener('scroll', this.handleScroll);

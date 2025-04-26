@@ -11,7 +11,7 @@ import Swiper from "swiper"; // Основной импорт Swiper
 import { Navigation, Autoplay, FreeMode } from "swiper/modules"; // Модули из отдельного пути
 import { createI18n } from "vue-i18n";
 import messages from "./lang";
-import 'lazysizes'
+// import 'lazysizes'
 
 // Стили для Swiper
 import "swiper/css";
