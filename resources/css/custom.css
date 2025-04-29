@@ -347,4 +347,10 @@ body {
     .smcircle::before {
         display: none !important;
     }
+    .swiper-slide {
+        width: auto !important;
+    }
+    .mobileLocationSwiper .swiper-slide {
+        width: 100% !important;
+    }
 }

@@ -108,6 +108,8 @@ function initAnimations() {
                     slidesPerView: "auto",
                     spaceBetween: 10,
                     freeMode: true,
+                    centeredSlides: true, // добавлено для центрирования слайдов
+                    centeredSlidesBounds: true, // добавлено для эффекта center mode
                     autoplay: {
                         delay: 3000, // Adjust delay as needed (in milliseconds)
                         disableOnInteraction: false,

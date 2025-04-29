@@ -1,6 +1,6 @@
 <template>
   <footer class="bg-[#1E1927] text-white text-center">
-    <div class=" py-10">
+    <div class=" md:py-10 py-3">
       <h2
         class="underline decoration-2 underline-offset-5 text-xl font-semibold uppercase tracking-wider text-[#DFABCA] mb-3">
         Eurocosmetics.tm
@@ -12,7 +12,7 @@
 
     <nav class="mb-3">
       <!-- Мобильное меню -->
-      <ul class="flex justify-center gap-6 text-[20px] py-10 md:hidden">
+      <ul class="flex justify-center gap-6 text-[20px] md:py-10 py-3 md:hidden">
         <li>
           <a href="#home" class="text-[#DFABCA] hover:underline" @click.prevent="scrollToSection('#home')">
             <i class="fa fa-home"></i>
@@ -36,7 +36,7 @@
       </ul>
 
       <!-- Десктопное меню -->
-      <ul class="hidden md:flex justify-center gap-6 text-[20px] py-10">
+      <ul class="hidden md:flex justify-center gap-6 text-[20px] md:py-10 py-3">
         <li>
           <a href="#home" class="text-[#DFABCA] hover:underline" @click.prevent="scrollToSection('#home')">{{ $t("footer.home") }}</a>
         </li>
@@ -64,19 +64,20 @@
           <i class="fa fa-envelope"></i> sales@eurocosmeticstm.com
         </a>
         <!-- Instagram -->
-        <a href="https://www.instagram.com/eurocosmetics.tm/?hl=ru"
-          class="text-[#DFABCA] hover:underline flex items-center gap-2" target="_blank" rel="noopener noreferrer">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <!-- TikTok (требует иконку 'fab fa-tiktok' в новой версии Font Awesome) -->
-        <a href="https://www.tiktok.com/@eurocosmetics.tm"
-          class="text-[#DFABCA] hover:underline flex items-center gap-2" target="_blank" rel="noopener noreferrer">
-          <i class="fab fa-tiktok"></i>
-        </a>
+        <div class="flex flex-wrap justify-center gap-6">
+          <a href="https://www.instagram.com/eurocosmetics.tm/?hl=ru"
+            class="text-[#DFABCA] hover:underline flex items-center gap-2" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.tiktok.com/@eurocosmetics.tm"
+            class="text-[#DFABCA] hover:underline flex items-center gap-2" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-tiktok"></i>
+          </a>
+        </div>
       </div>
     </div>
 
-    <div class="border-t border-[#332864] mt-3 pt-3 relative flex items-center justify-center footer-copy h-[150px]">
+    <div class="border-t border-[#332864] md:mt-3 md:pt-3 relative flex items-center justify-center footer-copy md:h-[150px]">
       <p class="text-sm px-4 flex gap-4 opacity-50 text-[14px] z-999">
         <a href="https://ltm.studio" class="text-[#DFABCA] hover:underline">{{ $t("footer.poweredBy") }}</a>
         <span class="text-[#DFABCA]">&copy; {{ new Date().getFullYear() }}</span>
@@ -108,7 +109,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 30px 0;
+  padding: 10px 0;
 }
 
 .footer-copy::before,

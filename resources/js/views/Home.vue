@@ -39,7 +39,7 @@
       </div>
     </div>
     <div v-else>
-      <section id="home" class="relative w-full h-screen max-h-[1200px] overflow-hidden animate-block">
+      <section id="home" class="relative w-full md:h-screen h-auto max-h-[1200px] overflow-hidden animate-block">
         <img :data-src="'/img/mainbanner.jpg'" alt="Banner"
           class="w-full h-full object-cover object-[center_35%] animate-image lazyload">
         <div class="absolute inset-0 bg-[linear-gradient(57.99deg,_#FCE7F3_0%,_#E8C4E6_47.5%)] opacity-70"></div>
@@ -55,9 +55,9 @@
       </section>
 
       <section id="about" class="relative">
-        <div class="container mx-auto px-5">
+        <div class="container mx-auto md:px-5 !p-[20px]">
           <div
-            class="relative mx-auto max-w-[400px] text-center transform -translate-y-1/2 z-30 p-[10px] bg-[#fff] rounded shadow animate-block">
+            class="relative mx-auto max-w-[400px] text-center transform md:-translate-y-1/2  z-30 p-[10px] bg-[#fff] rounded md:shadow  animate-block">
             <video autoplay muted loop class="w-full max-h-[660px] object-contain">
               <source :src="'/img/video.mp4'" type="video/mp4">
               Your browser does not support HTML5 video.
@@ -109,7 +109,7 @@
 
 
       <!-- Секция с изображениями и текстом "О нас" -->
-      <section class="pb-20 pt-30 md:pb-50">
+      <section class="pb-20 md:pt-30 pt-20 md:pb-50">
         <div class="container mx-auto px-5 space-y-10 circle relative">
 
           <!-- Блок «About Us» с цифрами -->
@@ -134,10 +134,10 @@
               <div class="mb-2 mx-auto w-28 h-28 flex items-center justify-center ">
                 <img :data-src="'/img/logo.png'" alt="Logo" class="w-28 h-28 object-contain lazyload">
               </div>
-              <h2 class="mb-2 lg:text-[40px] md:text-3xl tracking-[5px] uppercase py-5 t">
+              <h2 class="mb-2 lg:text-[40px] text-3xl tracking-[5px] uppercase py-5">
                 {{ $t("about.title") }}
               </h2>
-              <p class="mx-auto text-justify pb-5 whitespace-pre-line w-full lg:w-3/4">
+              <p class="mx-auto md:text-justify text-left pb-5 whitespace-pre-line w-full lg:w-3/4">
 
                 {{ $t("home.aboutUsDescription") }}
               </p>
@@ -160,10 +160,10 @@
               <div class="mb-2 mx-auto w-28 h-28 flex items-center justify-center animate-image">
                 <i class="fas fa-handshake text-[var(--gold)] text-[4rem]"></i>
               </div>
-              <h2 class="mb-2 lg:text-[40px] md:text-3xl tracking-[5px] uppercase py-5 animate-text">
+              <h2 class="mb-2 lg:text-[40px] text-3xl tracking-[5px] uppercase py-5 animate-text">
                 {{ $t("home.cooperation") }}
               </h2>
-              <p class="sm:w-1/2 w-full mx-auto text-justify pb-5 animate-text">
+              <p class="sm:w-1/2 w-full mx-auto md:text-justify text-left pb-5 animate-text">
                 {{ $t("home.cooperationDescription") }}
               </p>
               <!-- <animated-button :link="'/about'" :label="$t('home.moreInfo')"></animated-button> -->
@@ -176,7 +176,7 @@
       <!-- Секция продукции -->
       <!-- <section class="pt-10 pb-2 bg-[var(--pink)]">
         <div class="px-1">
-          <h2 class="mb-2 lg:text-[40px] md:text-3xl tracking-[5px] uppercase pb-10 text-[var(--gold)] text-center">
+          <h2 class="mb-2 lg:text-[40px] text-3xl tracking-[5px] uppercase pb-10 text-[var(--gold)] text-center">
             {{ $t("home.products") }}
           </h2>
           <div class="grid grid-cols-1 md:grid-cols-3 gap-2">
@@ -189,7 +189,7 @@
                 </div>
               </div>
               <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white z-20">
-                <h2 class="mb-2 lg:text-[40px] md:text-3xl tracking-[5px] uppercase py-5 animate-text">
+                <h2 class="mb-2 lg:text-[40px] text-3xl tracking-[5px] uppercase py-5 animate-text">
                   {{ $t(product.titleKey) }}
                 </h2>
                 <p class="sm:w-1/2 w-full mx-auto text-center pb-5 animate-text hidden md:block">
@@ -204,7 +204,7 @@
 
       <!-- Секция логотипов -->
       <section class="py-30 bg-[#F8ECF3]">
-        <h2 class="mb-2 lg:text-[40px] md:text-3xl tracking-[5px] uppercase py-5 text-[var(--gold)] text-center">
+        <h2 class="mb-2 lg:text-[40px] text-3xl tracking-[5px] uppercase py-5 text-[var(--gold)] text-center">
           {{ $t("home.brands") }}
         </h2>
 
@@ -244,7 +244,7 @@
         <div class="container mx-auto flex flex-col md:flex-row items-center gap-8">
           <div class="md:w-1/2">
             <p class="text-sm uppercase mb-2" style="color: #F0C8E0;">{{ $t("form.contactForm") }}</p>
-            <h2 class="text-4xl font-bold uppercase" style="color: #F0C8E0;">
+            <h2 class="lg:text-[40px] text-3xl font-bold uppercase" style="color: #F0C8E0;">
               {{ $t("form.focusOnPartners") }}
             </h2>
             <p class="text-lg mt-4" style="color: #F0C8E0B2;">
