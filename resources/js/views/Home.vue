@@ -42,7 +42,7 @@
       <section id="home" class="relative w-full md:h-screen h-auto max-h-[1200px] overflow-hidden animate-block">
         <img :data-src="'/img/mainbanner.jpg'" alt="Banner"
           class="w-full h-full object-cover object-[center_35%] animate-image lazyload">
-        <div class="absolute inset-0 bg-[linear-gradient(57.99deg,_#FCE7F3_0%,_#E8C4E6_47.5%)] opacity-70"></div>
+        <div class="absolute inset-0 bg-[linear-gradient(57.99deg,_#FCE7F3_0%,_#E8C4E6_47.5%)] opacity-20"></div>
         <div class="absolute inset-0 flex flex-col items-center justify-center">
           <span class="text-white text-[14px] font-normal uppercase py-10 animate-text">
             Eurocosmetics.tm
