@@ -2,14 +2,14 @@
   <header class="bg-[#f8f9fa] sticky top-0 shadow-md z-99">
     <link rel="stylesheet" href="/css/all.min.css">
     <div class="container mx-auto px-4 flex items-center justify-between">
-      <div class="md:hidden flex items-center">
+      <div class=" flex items-center">
 
         <div class="logo">
           <span class="text-[24px] text-[var(--gold)] font-bold uppercase tracking-[8px]">
             EUROCOSMETICS.TM
           </span>
         </div>
-        <button @click="toggleMenu" class="text-[var(--gold)] focus:outline-none">
+        <button @click="toggleMenu" class="text-[var(--gold)] focus:outline-none md:hidden">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
           </svg>
@@ -51,9 +51,9 @@
           <option value="tm">Türkmen</option>
         </select>
         <div class="flex items-center gap-4">
-          <a href="tel:+99312964949" class="flex items-center gap-1 text-[var(--gold)] hover:underline">
+          <a href="tel:+99312964867" class="flex items-center gap-1 text-[var(--gold)] hover:underline">
             <i class="fa fa-phone"></i>
-            <span>+99312964949</span>
+            <span>+99312964867</span>
           </a>
           <a href="mailto:sales@eurocosmeticstm.com" class="flex items-center gap-1 text-[var(--gold)] hover:underline">
             <i class="fa fa-envelope"></i>
@@ -118,8 +118,8 @@
         </ul>
         <!-- Контактная информация в мобильном меню -->
         <div class="mt-6">
-          <a href="tel:+99312964949" class="flex items-center gap-2 text-[var(--gold)] hover:underline">
-            <i class="fa fa-phone"></i> +99312964949
+          <a href="tel:+99312964867" class="flex items-center gap-2 text-[var(--gold)] hover:underline">
+            <i class="fa fa-phone"></i> +99312964867
           </a>
           <a href="mailto:sales@eurocosmeticstm.com"
             class="flex items-center gap-2 text-[var(--gold)] hover:underline mt-2">
