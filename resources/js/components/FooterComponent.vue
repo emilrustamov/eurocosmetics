@@ -56,8 +56,8 @@
     <div class="mb-6">
       <div class="flex flex-col md:flex-row items-center justify-center gap-6 text-lg">
         <!-- Телефон -->
-        <a href="tel:+99312964867" class="text-[#DFABCA] hover:underline flex items-center gap-2">
-          <i class="fa fa-phone"></i> +99312964867
+        <a href="tel:+99312964949" class="text-[#DFABCA] hover:underline flex items-center gap-2">
+          <i class="fa fa-phone"></i> +99312964949
         </a>
         <!-- Email -->
         <a href="mailto:sales@eurocosmeticstm.com" class="text-[#DFABCA] hover:underline flex items-center gap-2">

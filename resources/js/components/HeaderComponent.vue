@@ -51,9 +51,9 @@
           <option value="tm">Türkmen</option>
         </select>
         <div class="flex items-center gap-4">
-          <a href="tel:+99312964867" class="flex items-center gap-1 text-[var(--gold)] hover:underline">
+          <a href="tel:+99312964949" class="flex items-center gap-1 text-[var(--gold)] hover:underline">
             <i class="fa fa-phone"></i>
-            <span>+99312964867</span>
+            <span>+99312964949</span>
           </a>
           <a href="mailto:sales@eurocosmeticstm.com" class="flex items-center gap-1 text-[var(--gold)] hover:underline">
             <i class="fa fa-envelope"></i>
@@ -118,8 +118,8 @@
         </ul>
         <!-- Контактная информация в мобильном меню -->
         <div class="mt-6">
-          <a href="tel:+99312964867" class="flex items-center gap-2 text-[var(--gold)] hover:underline">
-            <i class="fa fa-phone"></i> +99312964867
+          <a href="tel:+99312964949" class="flex items-center gap-2 text-[var(--gold)] hover:underline">
+            <i class="fa fa-phone"></i> +99312964949
           </a>
           <a href="mailto:sales@eurocosmeticstm.com"
             class="flex items-center gap-2 text-[var(--gold)] hover:underline mt-2">
