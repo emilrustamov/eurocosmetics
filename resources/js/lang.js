@@ -36,16 +36,16 @@ export default {
         home: {
             createBeauty: "Красота спасет",
             brands: "Бренды",
-            stores: "Наши магазины",
+            stores: "НАШИ БУТИКИ",
             together: "мир",
             officialDistributors: "Официальные дистрибьюторы",
-            bestEuropeanBrands: "лучших европейских брендов",
+            bestEuropeanBrands: "лучших европейских и японских брендов",
             wideRange: "Широкий ассортимент",
-            cosmeceuticalProducts: "космоцевтических продуктов",
+            cosmeceuticalProducts: "космeцевтических продуктов",
             reputation: "Репутация",
             reliability: "Надёжность",
             aboutUsDescription:
-                "Eurocosmetics.tm - ваш официальный гид в мире премиальной европейской косметики и нишевой парфюмерии в Туркменистане. Мы с гордостью представляем продукцию всемирно известных брендов, таких как Vichy, La Roche-Posay, Cerave, Forrled, Catalysis, а также эксклюзивных парфюмерных домов: Memo Paris, Byredo, Vilhelm Parfumerie, The House of Oud и других.\n\n Наша тщательно подобранная коллекция включает в себя космецевтику - уникальное сочетание фармацевтических разработок и косметических инноваций Европы и Японии, а также редкие ароматы, созданные для истинных ценителей парфюмерного искусства. Мы стремимся подчеркнуть и сохранить вашу индивидуальность, предлагая высококачественные средства по уходу за кожей, волосами, декоративную косметику и изысканные ароматы",
+                "Eurocosmetics.tm - ваш официальный гид в мире премиальной европейской, японской косметики и нишевой парфюмерии в Туркменистане. Мы с гордостью представляем продукцию всемирно известных брендов, таких как Vichy, La Roche-Posay, Cerave, Forlled, Catalysis, а также эксклюзивных парфюмерных домов: Memo Paris, Byredo, Vilhelm Parfumerie, The House of Oud и других.\n\n Наша тщательно подобранная коллекция включает в себя космецевтику - уникальное сочетание фармацевтических разработок и косметических инноваций Европы и Японии, а также редкие ароматы, созданные для истинных ценителей парфюмерного искусства. Мы стремимся подчеркнуть и сохранить вашу индивидуальность, предлагая высококачественные средства по уходу за кожей, волосами, декоративную косметику и изысканные ароматы",
             moreInfo: "Подробнее",
             cooperation: "Сотрудничество",
             cooperationDescription:
@@ -129,16 +129,16 @@ export default {
         home: {
             createBeauty: "Beauty will save",
             brands: "Brands",
-            stores: "Our stores",
+            stores: "OUR BOUTIQUES",
             together: "the world",
             officialDistributors: "Official distributors",
-            bestEuropeanBrands: "of the best European brands",
+            bestEuropeanBrands: "of the best European and Japanese brands",
             wideRange: "Wide range",
             cosmeceuticalProducts: "of cosmeceutical products",
             reputation: "Reputation",
             reliability: "Reliability",
             aboutUsDescription:
-                "Eurocosmetics.tm is your official guide to the world of premium European cosmetics and niche perfumery in Turkmenistan. We proudly present products from globally renowned brands such as Vichy, La Roche-Posay, Cerave, Forrled, Catalysis, as well as exclusive perfume houses: Memo Paris, Byredo, Vilhelm Parfumerie, The House of Oud, and others. \n\n Our carefully curated collection includes cosmeceuticals—a unique blend of pharmaceutical research and cosmetic innovation from Europe and Japan—as well as rare fragrances designed for true connoisseurs of the perfumery art. We strive to emphasize and preserve your individuality by offering high-quality skincare, haircare, makeup products, and exquisite fragrances.",
+                "Eurocosmetics.tm is your official guide to the world of premium European and Japanese cosmetics and niche perfumery in Turkmenistan. We proudly present products from globally renowned brands such as Vichy, La Roche-Posay, Cerave, Forlled, Catalysis, as well as exclusive perfume houses: Memo Paris, Byredo, Vilhelm Parfumerie, The House of Oud, and others. \n\n Our carefully curated collection includes cosmeceuticals—a unique blend of pharmaceutical research and cosmetic innovation from Europe and Japan—as well as rare fragrances designed for true connoisseurs of the perfumery art. We strive to emphasize and preserve your individuality by offering high-quality skincare, haircare, makeup products, and exquisite fragrances.",
             moreInfo: "More info",
             cooperation: "Cooperation",
             cooperationDescription:
@@ -222,16 +222,16 @@ export default {
         home: {
             createBeauty: "Gözellik halas eder",
             brands: "Markalar",
-            stores: "Dükanlar",
+            stores: "BUTIKLER",
             together: "dünýä",
             officialDistributors: "Resmi paýlaýjylar",
-            bestEuropeanBrands: "iň gowy Ýewropa markalarynyň",
+            bestEuropeanBrands: "iň gowy Ýewropa we Ýapon markalarynyň",
             wideRange: "Giň görnüş",
             cosmeceuticalProducts: "kosmeseutika önümleriniň",
             reputation: "Reputasiýa",
             reliability: "Ygtybarlylyk",
             aboutUsDescription:
-                "Eurocosmetics.tm — Türkmenistandaky ýokary hilli Ýewropa kosmetikasynyň hem-de özboluşly parfýumeriýanyň dünýäsine siziň resmi ýolbeletňizdir. Biz buýsanmak bilen dünýä belli Vichy, La Roche-Posay, Cerave, Forrled, Catalysis ýaly giňden tanalýan önümleriň, şeýle hem Memo Paris, Byredo, Vilhelm Parfumerie, The House of Oud we beýleki gymmatly parfýumeriýa öýleriniň önümlerini hödürleýäris.\n\n Üns bilen saýlanyşykly ýygyndymyz Ýewropa hem-de Ýaponiýanyň derman senagatynyň we kosmetik innowasion ösüşleriniň utgaşmasy bolan kosmeseutika bilen bir hatarda, hakyky parfýumeriýa sungatynyň muşdaklary üçin döredilen seýrek ys-süssileri hem öz içine alýar. Biz siziň özboluşlylygyňyzy aýan etmek we gorap saklamak üçin ýokary hilli deri bejergisi, saç bejergisi, bezeg kosmetikasy hem-de ajaýyp atyrlar ýaly önümleri hödürleýäris.",
+                "Eurocosmetics.tm — Türkmenistandaky ýokary hilli Ýewropa we Ýapon kosmetikasynyň hem-de özboluşly parfýumeriýanyň dünýäsine siziň resmi ýolbeletňizdir. Biz buýsanmak bilen dünýä belli Vichy, La Roche-Posay, Cerave, Forlled, Catalysis ýaly giňden tanalýan önümleriň, şeýle hem Memo Paris, Byredo, Vilhelm Parfumerie, The House of Oud we beýleki gymmatly parfýumeriýa öýleriniň önümlerini hödürleýäris.\n\n Üns bilen saýlanyşykly ýygyndymyz Ýewropa hem-de Ýaponiýanyň derman senagatynyň we kosmetik innowasion ösüşleriniň utgaşmasy bolan kosmeseutika bilen bir hatarda, hakyky parfýumeriýa sungatynyň muşdaklary üçin döredilen seýrek ys-süssileri hem öz içine alýar. Biz siziň özboluşlylygyňyzy aýan etmek we gorap saklamak üçin ýokary hilli deri bejergisi, saç bejergisi, bezeg kosmetikasy hem-de ajaýyp atyrlar ýaly önümleri hödürleýäris.",
             moreInfo: "Has giňişleýin",
             cooperation: "Hyzmatdaşlyk",
             cooperationDescription:
