@@ -254,9 +254,9 @@
               <a href="tel:+99312964949" class="text-[#F0C8E0] hover:underline flex items-center gap-2">
                 <i class="fa fa-phone"></i> 993 12 96-49-49
               </a>
-              <a href="tel:+99312964866" class="text-[#F0C8E0] hover:underline flex items-center gap-2">
+              <!-- <a href="tel:+99312964866" class="text-[#F0C8E0] hover:underline flex items-center gap-2">
                 <i class="fa fa-phone"></i> +993 12 96-48-66
-              </a>
+              </a> -->
               <a href="mailto:sales@eurocosmeticstm.com" class="text-[#F0C8E0] hover:underline flex items-center gap-2">
                 <i class="fa fa-envelope"></i> sales@eurocosmeticstm.com
               </a>
